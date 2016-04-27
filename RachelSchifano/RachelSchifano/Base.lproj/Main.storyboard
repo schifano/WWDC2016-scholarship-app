@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,20 +19,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rc-K5-P9B">
+                                <rect key="frame" x="38" y="139" width="294" height="475"/>
+                                <color key="backgroundColor" red="0.60825047348484851" green="0.60825047348484851" blue="0.60825047348484851" alpha="1" colorSpace="calibratedRGB"/>
+                            </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="RACHEL SCHIFANO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USK-0F-pV8">
                                 <rect key="frame" x="66" y="66" width="243" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="WHERE I'M FROM" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7VZ-KC-0s3">
+                                <rect key="frame" x="67" y="293" width="240" height="81"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7VZ-KC-0s3" secondAttribute="height" multiplier="80:27" id="Dvm-qS-kJ4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="b1Z-Qv-SlY">
+                                <rect key="frame" x="124" y="622" width="127" height="37"/>
+                                <color key="backgroundColor" red="0.87058823529411766" green="0.20784313725490194" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="99a-qp-cig"/>
+                                </constraints>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="USK-0F-pV8" secondAttribute="trailing" constant="46" id="2K6-QA-cuq"/>
+                            <constraint firstItem="7VZ-KC-0s3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="67" id="HCY-NM-Z5Y"/>
+                            <constraint firstItem="b1Z-Qv-SlY" firstAttribute="top" secondItem="4rc-K5-P9B" secondAttribute="bottom" constant="8" id="Zd1-b2-KCE"/>
+                            <constraint firstItem="7VZ-KC-0s3" firstAttribute="top" secondItem="USK-0F-pV8" secondAttribute="bottom" constant="180" id="c0v-nM-mpC"/>
                             <constraint firstItem="USK-0F-pV8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="nAK-Pp-jvH"/>
+                            <constraint firstAttribute="trailing" secondItem="7VZ-KC-0s3" secondAttribute="trailing" constant="68" id="oMh-uQ-76E"/>
+                            <constraint firstItem="USK-0F-pV8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tCO-cm-fn7"/>
+                            <constraint firstItem="b1Z-Qv-SlY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ze7-1Z-s1f"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="pageControl" destination="b1Z-Qv-SlY" id="FiH-gh-skK"/>
+                        <outlet property="scrollView" destination="4rc-K5-P9B" id="Dhj-LZ-BWE"/>
+                        <outlet property="textView" destination="7VZ-KC-0s3" id="dnH-Sc-nzu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
