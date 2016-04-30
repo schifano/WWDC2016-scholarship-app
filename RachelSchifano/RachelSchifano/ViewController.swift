@@ -17,4 +17,10 @@ class ViewController: UIViewController {
     
     // Perform segue and pass in the button that was tapped
     // Button tapped specifies the data that is loaded
+    
+    
+    // TODO: Unhide status bar?
+//    override func prefersStatusBarHidden() -> Bool {
+//        return false
+//    }
 }

@@ -108,7 +108,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="666"/>
                                             <color key="backgroundColor" red="0.60825047350000006" green="0.60825047350000006" blue="0.60825047350000006" alpha="1" colorSpace="calibratedRGB"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#HashTag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIZ-D9-dnQ" userLabel="Hashtag Label">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#HashTag" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIZ-D9-dnQ" userLabel="Hashtag Label">
                                             <rect key="frame" x="176" y="31" width="176" height="32"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -123,8 +123,8 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION " textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zX1-Ni-o3j" userLabel="Slide Description">
-                                                    <rect key="frame" x="-79" y="45" width="453" height="70"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description is going to fit into this label and hopefully not be super long." textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zX1-Ni-o3j" userLabel="Slide Description">
+                                                    <rect key="frame" x="8" y="45" width="288" height="70"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -156,6 +156,9 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="ffh-xn-tXI"/>
+                    <connections>
+                        <outlet property="flowLayout" destination="VJS-lE-yfT" id="nvC-MP-abF"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQc-aL-sXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

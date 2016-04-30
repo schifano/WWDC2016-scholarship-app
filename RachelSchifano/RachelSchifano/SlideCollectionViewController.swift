@@ -11,15 +11,24 @@ import UIKit
 
 class SlideCollectionViewController: UICollectionViewController {
 
+    @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
+    
     // TODO: Implement paging
     
     override func viewDidLoad() {
 
  
-    // Set dimension of collection view cells to be size of screen
-        
+        // Set dimension of collection view cells to be size of screen
+        flowLayout.itemSize = CGSizeMake(self.view.frame.width, self.view.frame.height)
     
     }
+    
+    // TODO: Hide the status bar
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
+    
     
     // MARK: Collection View Data Source
     /**
