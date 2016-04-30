@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
+        <!--View Controller-->
         <scene sceneID="4mW-oA-wnX">
             <objects>
-                <viewController id="aIv-wz-jzi" customClass="CollectionViewController" customModule="RachelSchifano" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aIv-wz-jzi" customClass="ViewController" customModule="RachelSchifano" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NRh-E3-qFA"/>
                         <viewControllerLayoutGuide type="bottom" id="IBM-py-zUn"/>
@@ -54,14 +54,6 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="view.layer.borderWidth">
-                                        <integer key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="view.layer.borderColor">
-                                        <color key="value" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qu0-Sa-Rds">
                                 <rect key="frame" x="141" y="606" width="92" height="30"/>
@@ -115,7 +107,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NUc-Sf-3gc">
-                                            <rect key="frame" x="35" y="503" width="304" height="128"/>
+                                            <rect key="frame" x="35" y="507" width="304" height="128"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SLIDE TITLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zc-i3-P3x" userLabel="Slide Title">
                                                     <rect key="frame" x="16" y="18" width="263" height="19"/>
