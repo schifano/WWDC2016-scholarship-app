@@ -59,8 +59,8 @@
                                 <rect key="frame" x="141" y="606" width="92" height="30"/>
                                 <state key="normal" title="Why WWDC?"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RACHEL SCHIFANO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4B-hM-9qE">
-                                <rect key="frame" x="49" y="56" width="275" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RACHEL SCHIFANO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4B-hM-9qE">
+                                <rect key="frame" x="50" y="56" width="275" height="49"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -99,6 +99,9 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B2V-k3-bYQ">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="666"/>
                                             <color key="backgroundColor" red="0.60825047350000006" green="0.60825047350000006" blue="0.60825047350000006" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="666" id="mse-UL-Ami"/>
+                                            </constraints>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixW-FB-zEs" userLabel="Hashtag View">
                                             <rect key="frame" x="190" y="22" width="177" height="32"/>
@@ -154,19 +157,23 @@
                                 </view>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="B2V-k3-bYQ" firstAttribute="top" secondItem="C9X-j5-k61" secondAttribute="topMargin" constant="-8" id="7TJ-iS-riw"/>
                                     <constraint firstItem="NUc-Sf-3gc" firstAttribute="leading" secondItem="C9X-j5-k61" secondAttribute="leadingMargin" constant="27.5" id="Bjc-ai-fvg"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="NUc-Sf-3gc" secondAttribute="trailing" constant="32" id="HY1-bc-Zzp"/>
                                     <constraint firstItem="ixW-FB-zEs" firstAttribute="trailing" secondItem="C9X-j5-k61" secondAttribute="trailingMargin" id="XaX-Pb-w0t"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="B2V-k3-bYQ" secondAttribute="bottom" constant="-8" id="gQU-69-iiv"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="NUc-Sf-3gc" secondAttribute="bottom" constant="21" id="gqJ-Gv-b4W"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="B2V-k3-bYQ" secondAttribute="trailing" constant="-8" id="iVj-5h-7Fx"/>
                                     <constraint firstItem="B2V-k3-bYQ" firstAttribute="leading" secondItem="C9X-j5-k61" secondAttribute="leadingMargin" constant="-8" id="l8m-3H-dK2"/>
                                     <constraint firstItem="ixW-FB-zEs" firstAttribute="leading" secondItem="C9X-j5-k61" secondAttribute="leadingMargin" constant="182" id="muV-i7-F2s"/>
+                                    <constraint firstItem="B2V-k3-bYQ" firstAttribute="top" secondItem="C9X-j5-k61" secondAttribute="topMargin" constant="-8" id="n1P-Fj-tMk"/>
                                     <constraint firstItem="ixW-FB-zEs" firstAttribute="top" secondItem="C9X-j5-k61" secondAttribute="topMargin" constant="14" id="nEi-gx-WM3"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="B2V-k3-bYQ" secondAttribute="trailing" constant="-8" id="qWc-fg-c8U"/>
                                     <constraint firstItem="ixW-FB-zEs" firstAttribute="leading" secondItem="NUc-Sf-3gc" secondAttribute="trailing" constant="-145" id="tOC-wt-Qzf"/>
+                                    <constraint firstItem="B2V-k3-bYQ" firstAttribute="top" secondItem="C9X-j5-k61" secondAttribute="topMargin" constant="-8" id="znK-Gy-4s8"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="parallaxHeightConstraint" destination="mse-UL-Ami" id="4Tb-ol-eKl"/>
+                                    <outlet property="parallaxTopConstraint" destination="znK-Gy-4s8" id="WXf-G2-TzQ"/>
                                     <outlet property="slideDescriptionText" destination="zX1-Ni-o3j" id="2z2-hP-x40"/>
                                     <outlet property="slideHashtagText" destination="FIZ-D9-dnQ" id="fsK-Di-aza"/>
                                     <outlet property="slideImageView" destination="B2V-k3-bYQ" id="ksx-bh-OLE"/>
@@ -182,6 +189,7 @@
                     <navigationItem key="navigationItem" id="ffh-xn-tXI"/>
                     <connections>
                         <outlet property="flowLayout" destination="VJS-lE-yfT" id="nvC-MP-abF"/>
+                        <outlet property="slideCollectionView" destination="iGg-Z2-NZS" id="rap-y8-6mU"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQc-aL-sXd" userLabel="First Responder" sceneMemberID="firstResponder"/>

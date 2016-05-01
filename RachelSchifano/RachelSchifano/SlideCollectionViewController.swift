@@ -12,12 +12,12 @@ import UIKit
 class SlideCollectionViewController: UICollectionViewController {
 
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
-    
-    // TODO: Implement paging
-    
-    override func viewDidLoad() {
+    @IBOutlet weak var slideCollectionView: UICollectionView!
 
- 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // FIXME: Add minimumLineSpacing gap for design
         // Set dimension of collection view cells to be size of screen
         flowLayout.itemSize = CGSizeMake(self.view.frame.width, self.view.frame.height)
         // FIXME: Temporary fix for the cell gap issue
@@ -28,7 +28,6 @@ class SlideCollectionViewController: UICollectionViewController {
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
-    
     
     
     // MARK: Collection View Data Source
@@ -52,6 +51,10 @@ class SlideCollectionViewController: UICollectionViewController {
         let slideImageName = slide["image"] as! String
         let slideImage = UIImage.init(named: slideImageName)
         cell.slideImageView.image = slideImage
+        
+        cell.parallaxHeightConstraint.constant = parallaxImageHeight
+        cell.parallaxTopConstraint.constant = parallaxOffsetFor(slideCollectionView.contentOffset.y, cell: cell)
+        
         // Set hashtag
         cell.slideHashtagText.text = slide["hashtag"] as? String
         // Set title
@@ -62,6 +65,36 @@ class SlideCollectionViewController: UICollectionViewController {
         return cell
     }
     
+    // Change the ratio or enter a fixed value
+    var cellHeight: CGFloat {
+        return slideCollectionView.frame.width * 9/16
+    }
+    
+    // An alias to make the code easier to read
+    var imageVisibleHeight: CGFloat {
+        return cellHeight
+    }
+    
+    // Sets how fast the image moves when you scroll
+    let parallaxOffsetSpeed: CGFloat = 25
+    
+    var parallaxImageHeight: CGFloat {
+        let maxOffset = (sqrt(pow(cellHeight, 2) + 4 * parallaxOffsetSpeed * slideCollectionView.frame.height) - cellHeight) / 2
+        return imageVisibleHeight + maxOffset
+    }
+    
+    
+    // Used when the table dequeues a cell, or when it scrolls
+    func parallaxOffsetFor(newOffsetY: CGFloat, cell: UICollectionViewCell) -> CGFloat {
+        return ((newOffsetY - cell.frame.origin.y) / parallaxImageHeight) * parallaxOffsetSpeed
+    }
+    
+    override func scrollViewDidScroll(scrollView: UIScrollView) {
+        let offsetY = slideCollectionView.contentOffset.y
+        for cell in slideCollectionView.visibleCells() as! [SlideCollectionViewCell] {
+            cell.parallaxTopConstraint.constant = parallaxOffsetFor(offsetY, cell: cell)
+        }
+    }
     
     // MARK: Hardcoded data for now
     func hardCodedAboutData() ->[[String: AnyObject]] {

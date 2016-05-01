@@ -106,7 +106,6 @@
 		2954C4FC1CD2EA5F009E89D9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2956D37E1CCB309F00359377 /* ScrollViewController.swift */,
 				29FE1E8D1CD07E0E00707543 /* ViewController.swift */,
 				2954C4FF1CD2EB08009E89D9 /* SlideCollectionViewController.swift */,
 			);
@@ -142,6 +141,7 @@
 				2956D37C1CCB309F00359377 /* AppDelegate.swift */,
 				2956D3801CCB309F00359377 /* ScrollView.storyboard */,
 				29FE1E8B1CD07DEE00707543 /* Main.storyboard */,
+				2956D37E1CCB309F00359377 /* ScrollViewController.swift */,
 				2956D3831CCB309F00359377 /* Assets.xcassets */,
 				2956D3851CCB309F00359377 /* LaunchScreen.storyboard */,
 				2956D3881CCB309F00359377 /* Info.plist */,

@@ -15,5 +15,15 @@ class SlideCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var slideHashtagText: UILabel!
     @IBOutlet weak var slideTitleText: UILabel!
     @IBOutlet weak var slideDescriptionText: UILabel!
+ 
+    // MARK: Parallax cell
+    @IBOutlet weak var parallaxHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var parallaxTopConstraint: NSLayoutConstraint!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        clipsToBounds = true
+        slideImageView.contentMode = .ScaleAspectFill
+        slideImageView.clipsToBounds = false
+    }
 }
