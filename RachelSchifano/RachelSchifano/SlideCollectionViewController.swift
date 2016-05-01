@@ -29,8 +29,6 @@ class SlideCollectionViewController: UICollectionViewController {
         flowLayout.itemSize = CGSizeMake(self.view.frame.width, self.view.frame.height)
         // FIXME: Temporary fix for the cell gap issue
         flowLayout.minimumLineSpacing = 0
-        
-        prefersStatusBarHidden()
     }
     
     // TODO: Implement unwind segue
@@ -53,9 +51,18 @@ class SlideCollectionViewController: UICollectionViewController {
          - returns: memes.count The number of rows (memes) in section
      */
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // FIXME: Add last image to about (SF)
-        //        return hardCodedAboutData().count ... They should have 8 though
-        return 7
+        var numberOfItems: Int!
+        switch buttonSelected {
+            case "ABOUT":
+                numberOfItems = hardCodedAboutData().count
+            case "ACHIEVEMENTS":
+                numberOfItems = hardCodedAchievementsData().count
+            case "AMBITIONS":
+                numberOfItems = hardCodedAmbitionsData().count
+            default:
+                break
+        }
+        return numberOfItems
     }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -70,8 +77,6 @@ class SlideCollectionViewController: UICollectionViewController {
                 slide = hardCodedAchievementsData()[indexPath.row]
             case "AMBITIONS":
                 slide = hardCodedAmbitionsData()[indexPath.row]
-            case "APPS":
-                slide = hardCodedAppsData()[indexPath.row]
             default:
                 break
         }
@@ -196,7 +201,7 @@ class SlideCollectionViewController: UICollectionViewController {
                 "description": "State Farm Hack Day 2014 Winner ($10,000), participated in 8 hackathons."
             ], [
                 "image": "14-gracehopper",
-                "hashtag": "#GraceHopperConference",
+                "hashtag": "#GraceHopper",
                 "title": "ACTIVIST",
                 "description": "Advocate for diversity and inclusion, self-motivated."
             ], [
@@ -256,12 +261,6 @@ class SlideCollectionViewController: UICollectionViewController {
                 "title": "MY FAVES",
                 "description": "Steak n' Shake fan. Not sold on In-N-Out. Still trying."
             ]
-        ]
-    }
-    
-    // FIXME: Add information about apps
-    func hardCodedAppsData() ->[[String: AnyObject]] {
-        return [
         ]
     }
 }
