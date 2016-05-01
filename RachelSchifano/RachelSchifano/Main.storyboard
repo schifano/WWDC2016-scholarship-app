@@ -33,8 +33,11 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkL-fa-phq">
-                                <rect key="frame" x="59" y="239" width="236" height="110"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkL-fa-phq">
+                                <rect key="frame" x="55" y="242" width="244" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="J08-yC-bXx"/>
+                                </constraints>
                                 <string key="text">1. Tap settings &gt; General
 2. Tap Keyboard &gt; Keyboards
 3. Tap Add New Keyboard
@@ -45,9 +48,9 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0V4-0x-Ggi">
-                                <rect key="frame" x="11" y="414" width="345" height="191"/>
+                                <rect key="frame" x="3" y="414" width="361" height="157"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="191" id="gbs-gn-egB"/>
+                                    <constraint firstAttribute="height" constant="157" id="gbs-gn-egB"/>
                                 </constraints>
                                 <string key="text">1. Go to an input field
 2. Switch to StickerKeyboard-RachelSchifano
@@ -59,14 +62,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="HOW TO INSTALL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ix-EC-DQl">
-                                <rect key="frame" x="99" y="217" width="176" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOW TO INSTALL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ix-EC-DQl">
+                                <rect key="frame" x="95" y="217" width="184" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HOW TO USE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znq-Fg-osw">
-                                <rect key="frame" x="110" y="385" width="135" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOW TO USE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znq-Fg-osw">
+                                <rect key="frame" x="106" y="382" width="143" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -83,22 +86,25 @@
                         <color key="backgroundColor" red="0.15686274509803921" green="0.16470588235294117" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="WTY-cJ-HEn" firstAttribute="top" secondItem="91Q-yw-WnU" secondAttribute="bottom" constant="25" id="1GL-dN-Izd"/>
+                            <constraint firstItem="1ix-EC-DQl" firstAttribute="top" secondItem="Z2U-hJ-S2h" secondAttribute="bottom" constant="24" id="3Sk-md-tGv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WTY-cJ-HEn" secondAttribute="trailing" constant="52" id="3dc-Ls-VVE"/>
-                            <constraint firstItem="0V4-0x-Ggi" firstAttribute="top" secondItem="Znq-Fg-osw" secondAttribute="bottom" constant="8" id="4Em-7F-xjy"/>
                             <constraint firstItem="RkL-fa-phq" firstAttribute="top" secondItem="1ix-EC-DQl" secondAttribute="bottom" constant="1" id="6WE-pu-U5Y"/>
                             <constraint firstItem="RkL-fa-phq" firstAttribute="leading" secondItem="0zc-yW-x3h" secondAttribute="leadingMargin" constant="39" id="7xv-IT-816"/>
                             <constraint firstItem="Z2U-hJ-S2h" firstAttribute="leading" secondItem="0zc-yW-x3h" secondAttribute="leadingMargin" constant="66" id="CaZ-kl-TFC"/>
                             <constraint firstItem="nVn-eL-iuJ" firstAttribute="leading" secondItem="0zc-yW-x3h" secondAttribute="leadingMargin" constant="109" id="IyF-nf-UD5"/>
+                            <constraint firstItem="nVn-eL-iuJ" firstAttribute="top" secondItem="0V4-0x-Ggi" secondAttribute="bottom" constant="38" id="O3L-lr-bww"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nVn-eL-iuJ" secondAttribute="trailing" constant="118" id="W3J-cW-xEE"/>
+                            <constraint firstItem="0V4-0x-Ggi" firstAttribute="top" secondItem="Znq-Fg-osw" secondAttribute="bottom" constant="8" id="WTz-Yl-0i4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1ix-EC-DQl" secondAttribute="trailing" constant="80" id="Xt0-FF-Ppg"/>
+                            <constraint firstItem="1ix-EC-DQl" firstAttribute="leading" secondItem="0zc-yW-x3h" secondAttribute="leadingMargin" constant="79" id="Yjq-th-I4t"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Znq-Fg-osw" secondAttribute="trailing" constant="110" id="cNW-Fq-Jmj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RkL-fa-phq" secondAttribute="trailing" constant="60" id="dU9-vf-ZVb"/>
                             <constraint firstItem="Znq-Fg-osw" firstAttribute="leading" secondItem="0zc-yW-x3h" secondAttribute="leadingMargin" constant="90" id="e32-qJ-kW1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Z2U-hJ-S2h" secondAttribute="trailing" constant="66" id="iFF-ph-5bg"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0V4-0x-Ggi" secondAttribute="trailing" constant="3" id="mQt-tu-Qgt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0V4-0x-Ggi" secondAttribute="trailing" constant="-5" id="mQt-tu-Qgt"/>
                             <constraint firstItem="RmR-EE-UQc" firstAttribute="top" secondItem="nVn-eL-iuJ" secondAttribute="bottom" constant="20" id="nUq-mb-Jfb"/>
-                            <constraint firstItem="0V4-0x-Ggi" firstAttribute="leading" secondItem="0zc-yW-x3h" secondAttribute="leadingMargin" constant="-5" id="pDD-bN-xr0"/>
+                            <constraint firstItem="0V4-0x-Ggi" firstAttribute="leading" secondItem="0zc-yW-x3h" secondAttribute="leadingMargin" constant="-13" id="pDD-bN-xr0"/>
                             <constraint firstItem="Z2U-hJ-S2h" firstAttribute="top" secondItem="WTY-cJ-HEn" secondAttribute="bottom" constant="8" id="u8E-B5-Qeo"/>
-                            <constraint firstItem="RmR-EE-UQc" firstAttribute="top" secondItem="0V4-0x-Ggi" secondAttribute="bottom" constant="62" id="w03-CT-Erc"/>
                             <constraint firstItem="WTY-cJ-HEn" firstAttribute="leading" secondItem="0zc-yW-x3h" secondAttribute="leadingMargin" constant="51" id="x4M-1K-0az"/>
                         </constraints>
                     </view>
