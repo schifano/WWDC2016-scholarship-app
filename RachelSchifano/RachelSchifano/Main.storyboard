@@ -240,9 +240,11 @@
                     <connections>
                         <outlet property="flowLayout" destination="VJS-lE-yfT" id="nvC-MP-abF"/>
                         <outlet property="slideCollectionView" destination="iGg-Z2-NZS" id="rap-y8-6mU"/>
+                        <segue destination="zVh-zV-VOI" kind="unwind" identifier="unwindToHome" unwindAction="unwindToHome:" id="wdN-yc-beK"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQc-aL-sXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="zVh-zV-VOI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="259.5" y="308.5"/>
         </scene>

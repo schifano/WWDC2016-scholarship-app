@@ -33,8 +33,10 @@ class SlideCollectionViewController: UICollectionViewController {
         prefersStatusBarHidden()
     }
     
+    // TODO: Implement unwind segue
     func handleDownSwipe(sender: UISwipeGestureRecognizer) {
         print("Swiped down") // TEST
+        performSegueWithIdentifier("unwindToHome", sender: nil)
     }
     
     // TODO: Hide the status bar

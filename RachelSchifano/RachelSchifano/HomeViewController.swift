@@ -47,6 +47,10 @@ class HomeViewController: UIViewController {
         print(buttonTapped) // TEST
     }
     
+    @IBAction func unwindToHome(segue: UIStoryboardSegue) {
+        
+    }
+    
     // Perform segue to SlideCollectionViewController
     // Pass selected button text
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
