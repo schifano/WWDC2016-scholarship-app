@@ -162,12 +162,12 @@ class SlideCollectionViewController: UICollectionViewController {
                 "image": "6-artist",
                 "hashtag": "#Artist",
                 "title": "LIFE SKILL",
-                "description": "Not afraid of oils, blank canvases or crayons."
+                "description": "Not afraid of blank canvases, oils, or crayons."
             ], [
                 "image": "7-guitarist",
                 "hashtag": "#Musician",
                 "title": "METAL",
-                "description": "Lover, listener, and lead guitarist of metal."
+                "description": "Lover and listener. Lead metal guitarist."
             ]
         ]
     }
@@ -178,7 +178,7 @@ class SlideCollectionViewController: UICollectionViewController {
                 "image": "9-niaf",
                 "hashtag": "#VoyageOfDiscovery",
                 "title": "HERITAGE",
-                "description": "Scholarship winner. 10-day trip. 500 applicants. National Italian American Foundation."
+                "description": "National Italian American Foundation scholarship winner. 10-day trip. 500 applicants."
             ], [
                 "image": "10-redbirdhacks",
                 "hashtag": "#RedbirdHacks",
@@ -188,32 +188,32 @@ class SlideCollectionViewController: UICollectionViewController {
                 "image": "11-square",
                 "hashtag": "#Square",
                 "title": "CODE CAMPER",
-                "description": "5-day engineering program. 600 applicants."
+                "description": "5-day engineering program. SF. 600 applicants. Jack Dorsey, machine learning, hacking."
             ], [
                 "image": "12-hackcon",
                 "hashtag": "#Hackcon",
                 "title": "ORGANIZER",
-                "description": "Hackathon organizer conference. Hackcon II (New YorK) & III (San Francisco)."
+                "description": "Hackathon organizer conference. Hackcon II (New York) & III (San Francisco)."
             ], [
                 "image": "13-hackathons",
                 "hashtag": "#Hackathons",
                 "title": "STREET CRED",
-                "description": "State Farm Hack Day 2014 Winner ($10,000), participated in 8 hackathons."
+                "description": "State Farm Hack Day 2014 Winner ($10,000). Participated in 8 hackathons."
             ], [
                 "image": "14-gracehopper",
                 "hashtag": "#GraceHopper",
                 "title": "ACTIVIST",
-                "description": "Advocate for diversity and inclusion, self-motivated."
+                "description": "Advocate for diversity and inclusion. Selfishly hardworking, selflessly helpful."
             ], [
                 "image": "15-womentech",
                 "hashtag": "#GoogleChicago",
-                "title": "WOMEN TECHMAKER",
-                "description": "Women Techmaker member, International Women's Day Summit participant"
+                "title": "TECHMAKER",
+                "description": "Women techmaker, International Women's Day Summit. Fangirled over Parisa Tabriz."
             ], [
                 "image": "16-ferrari",
                 "hashtag": "#Ferrari458Italia",
                 "title": "RACING",
-                "description": "Raced a Ferrari 458 Italia using a wet driving line on a rainy day. Didn't even cry."
+                "description": "Drove a Ferrari 458 Italia using a wet driving line on a rainy day. Didn't even cry."
             ]
         ]
     }
@@ -224,37 +224,37 @@ class SlideCollectionViewController: UICollectionViewController {
                 "image": "17-wheel",
                 "hashtag": "#Engineering",
                 "title": "MY PASSION",
-                "description": "Any intersection of engineering, I want to know it."
+                "description": "Any intersection of engineering. I have to dissect it and learn it. Even Disneyland."
             ], [
                 "image": "18-bridge",
                 "hashtag": "#BayArea",
                 "title": "MY FUTURE",
-                "description": "Gaining XP so I can level up."
+                "description": "Building apps to gain XP and level up. A challenging career change motivates me."
             ], [
                 "image": "19-automechanics",
                 "hashtag": "#Automechanics",
                 "title": "MY CRAVING",
-                "description": "Learning is the first thing, being a mechanic is the next. Engines are cool."
+                "description": "Learning is the first step. Being a mechanic is the next. Racing is the culmination."
             ], [
                 "image": "20-ios",
                 "hashtag": "#iOSDevelopment",
                 "title": "MY NICHE",
-                "description": "I do iOS today and I'm doing iOS in my future."
+                "description": "I once wielded pencils. I now wield Swift. iOS is the code craft I want to master."
             ], [
                 "image": "21-plane",
-                "hashtag": "#",
-                "title": "",
-                "description": ""
+                "hashtag": "#Flying",
+                "title": "MY CURIOSITY",
+                "description": "Multitasking and planning. A necessity of disciplines. This is detail I admire."
             ], [
                 "image": "22-controller",
                 "hashtag": "#DJing",
-                "title": "",
-                "description": ""
+                "title": "MY DECKS",
+                "description": "The lights are impressive. The audio and hardware engineering even more."
             ], [
                 "image": "23-guitars",
                 "hashtag": "#MusicProduction",
                 "title": "MY JAM",
-                "description": "Ableton, guitar riffs, mixes. I want to produce music."
+                "description": "Ableton, guitar riffs, mixes, keyboard, theory. I'm no stranger to music."
             ], [
                 "image": "24-burgers",
                 "hashtag": "#Cheeseburgers",
