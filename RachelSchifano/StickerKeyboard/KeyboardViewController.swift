@@ -42,8 +42,33 @@ class KeyboardViewController: UIInputViewController {
     }
     
     
-    @IBAction func pandaStickerPressed(sender: UIButton) {
-        let image = UIImage(named: "panda")
+    @IBAction func bearStickerPressed(sender: UIButton) {
+        let image = UIImage(named: "sticker-bear")
+        UIPasteboard.generalPasteboard().image = image
+    }
+    
+    @IBAction func burgerStickerPressed(sender: UIButton) {
+        let image = UIImage(named: "sticker-burger")
+        UIPasteboard.generalPasteboard().image = image
+    }
+    
+    @IBAction func heartStickerPressed(sender: UIButton) {
+        let image = UIImage(named: "sticker-heart")
+        UIPasteboard.generalPasteboard().image = image
+    }
+    
+    @IBAction func alsoStickerPressed(sender: UIButton) {
+        let image = UIImage(named: "sticker-also")
+        UIPasteboard.generalPasteboard().image = image
+    }
+    
+    @IBAction func illinoisStickerPressed(sender: UIButton) {
+        let image = UIImage(named: "sticker-illinois")
+        UIPasteboard.generalPasteboard().image = image
+    }
+    
+    @IBAction func flagStickerPressed(sender: UIButton) {
+        let image = UIImage(named: "sticker-flag")
         UIPasteboard.generalPasteboard().image = image
     }
 }
