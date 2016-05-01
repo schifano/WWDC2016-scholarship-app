@@ -176,7 +176,7 @@ class SlideCollectionViewController: UICollectionViewController {
         return [
             [
                 "image": "9-niaf",
-                "hashtag": "#VoyageOfDiscovery",
+                "hashtag": "#NIAF",
                 "title": "HERITAGE",
                 "description": "National Italian American Foundation scholarship winner. 10-day trip. 500 applicants."
             ], [
@@ -237,7 +237,7 @@ class SlideCollectionViewController: UICollectionViewController {
                 "description": "Learning is the first step. Being a mechanic is the next. Racing is the culmination."
             ], [
                 "image": "20-ios",
-                "hashtag": "#iOSDevelopment",
+                "hashtag": "#Development",
                 "title": "MY NICHE",
                 "description": "I once wielded pencils. I now wield Swift. iOS is the code craft I want to master."
             ], [
@@ -252,7 +252,7 @@ class SlideCollectionViewController: UICollectionViewController {
                 "description": "The lights are impressive. The audio and hardware engineering even more."
             ], [
                 "image": "23-guitars",
-                "hashtag": "#MusicProduction",
+                "hashtag": "#Production",
                 "title": "MY JAM",
                 "description": "Ableton, guitar riffs, mixes, keyboard, theory. I'm no stranger to music."
             ], [

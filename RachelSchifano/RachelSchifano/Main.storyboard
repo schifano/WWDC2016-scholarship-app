@@ -161,9 +161,9 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecm-uE-lQc">
                                 <rect key="frame" x="74" y="167" width="227" height="401"/>
                                 <color key="backgroundColor" red="0.15686274509803921" green="0.16470588235294117" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">One year ago I missed the opportunity to apply for a WWDC 2015 scholarship. I wanted so badly to be like my friends and peers working on their apps but I wasn’t. Instead, I was directing Illinois State University’s first ever hackathon, RedbirdHacks. It was logistical chaos. I lost sleep and my mind, but the one thing I didn’t lose was the memory of missing out on the single most amazing opportunity as a passionate iOS Developer.
+                                <string key="text">One year ago I missed the opportunity to apply for a WWDC 2015 scholarship. I wanted so badly to be like my friends and peers working on their apps but I wasn’t. Instead, I was directing Illinois State University’s first ever hackathon, RedbirdHacks. It was logistical chaos. I lost sleep and my mind, but the one thing I didn’t lose was the memory of missing out on the single most amazing opportunity as a passionate iOS Developer.
 
-So here I am a year later, fighting a sniffly nose and pulling an all-nighter just to have my chance. As my fellow ladies from Grace Hopper and Square College Code Camp like to remind me, “You miss 100% of the shots you don’t take." Here I go.</mutableString>
+So here I am a year later, fighting a sniffly nose and pulling an all-nighter just to have my chance. As my fellow ladies from Grace Hopper and Square College Code Camp like to remind me, “You miss 100% of the shots you don’t take." Here I go.</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -217,25 +217,6 @@ So here I am a year later, fighting a sniffly nose and pulling an all-nighter ju
                                                 <constraint firstAttribute="height" constant="666" id="mse-UL-Ami"/>
                                             </constraints>
                                         </imageView>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixW-FB-zEs" userLabel="Hashtag View">
-                                            <rect key="frame" x="170" y="22" width="197" height="32"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#HashTag" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIZ-D9-dnQ" userLabel="Hashtag Label">
-                                                    <rect key="frame" x="8" y="0.0" width="181" height="32"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstItem="FIZ-D9-dnQ" firstAttribute="top" secondItem="ixW-FB-zEs" secondAttribute="top" id="9Je-j7-4F4"/>
-                                                <constraint firstItem="FIZ-D9-dnQ" firstAttribute="leading" secondItem="ixW-FB-zEs" secondAttribute="leading" constant="8" id="AhN-KP-AJF"/>
-                                                <constraint firstAttribute="trailing" secondItem="FIZ-D9-dnQ" secondAttribute="trailing" constant="8" id="Lat-Vv-f9U"/>
-                                                <constraint firstAttribute="height" constant="32" id="S3s-XS-dzZ"/>
-                                                <constraint firstAttribute="bottom" secondItem="FIZ-D9-dnQ" secondAttribute="bottom" id="vtn-f9-dLU"/>
-                                            </constraints>
-                                        </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NUc-Sf-3gc" userLabel="Description View">
                                             <rect key="frame" x="35" y="497" width="300" height="140"/>
                                             <subviews>
@@ -266,6 +247,25 @@ So here I am a year later, fighting a sniffly nose and pulling an all-nighter ju
                                                 <constraint firstItem="zX1-Ni-o3j" firstAttribute="leading" secondItem="NUc-Sf-3gc" secondAttribute="leading" constant="26" id="xY4-ux-0CK"/>
                                             </constraints>
                                         </view>
+                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ixW-FB-zEs" userLabel="Hashtag View">
+                                            <rect key="frame" x="171" y="23" width="168" height="32"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="  #HashTag" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="157" translatesAutoresizingMaskIntoConstraints="NO" id="FIZ-D9-dnQ" userLabel="Hashtag Label">
+                                                    <rect key="frame" x="8" y="0.0" width="152" height="32"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="FIZ-D9-dnQ" firstAttribute="top" secondItem="ixW-FB-zEs" secondAttribute="top" id="K5x-Vp-pa3"/>
+                                                <constraint firstAttribute="height" constant="32" id="S3s-XS-dzZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="FIZ-D9-dnQ" secondAttribute="trailing" constant="8" id="ZaF-N8-cAk"/>
+                                                <constraint firstItem="FIZ-D9-dnQ" firstAttribute="leading" secondItem="ixW-FB-zEs" secondAttribute="leading" constant="8" id="jbt-ed-JgB"/>
+                                                <constraint firstAttribute="bottom" secondItem="FIZ-D9-dnQ" secondAttribute="bottom" id="vtn-f9-dLU"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -273,14 +273,13 @@ So here I am a year later, fighting a sniffly nose and pulling an all-nighter ju
                                 <constraints>
                                     <constraint firstItem="NUc-Sf-3gc" firstAttribute="leading" secondItem="C9X-j5-k61" secondAttribute="leadingMargin" constant="27.5" id="Bjc-ai-fvg"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="NUc-Sf-3gc" secondAttribute="trailing" constant="32" id="HY1-bc-Zzp"/>
-                                    <constraint firstItem="ixW-FB-zEs" firstAttribute="trailing" secondItem="C9X-j5-k61" secondAttribute="trailingMargin" id="XaX-Pb-w0t"/>
+                                    <constraint firstItem="ixW-FB-zEs" firstAttribute="trailing" secondItem="C9X-j5-k61" secondAttribute="trailingMargin" constant="-28" id="XaX-Pb-w0t"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="B2V-k3-bYQ" secondAttribute="bottom" constant="-8" id="gQU-69-iiv"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="NUc-Sf-3gc" secondAttribute="bottom" constant="21" id="gq9-h5-48j"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="B2V-k3-bYQ" secondAttribute="trailing" constant="-8" id="iVj-5h-7Fx"/>
                                     <constraint firstItem="B2V-k3-bYQ" firstAttribute="leading" secondItem="C9X-j5-k61" secondAttribute="leadingMargin" constant="-8" id="l8m-3H-dK2"/>
-                                    <constraint firstItem="ixW-FB-zEs" firstAttribute="leading" secondItem="C9X-j5-k61" secondAttribute="leadingMargin" constant="162" id="muV-i7-F2s"/>
                                     <constraint firstItem="B2V-k3-bYQ" firstAttribute="top" secondItem="C9X-j5-k61" secondAttribute="topMargin" constant="-8" id="n1P-Fj-tMk"/>
-                                    <constraint firstItem="ixW-FB-zEs" firstAttribute="top" secondItem="C9X-j5-k61" secondAttribute="topMargin" constant="14" id="nEi-gx-WM3"/>
+                                    <constraint firstItem="ixW-FB-zEs" firstAttribute="top" secondItem="C9X-j5-k61" secondAttribute="topMargin" constant="15" id="nEi-gx-WM3"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="parallaxHeightConstraint" destination="mse-UL-Ami" id="4Tb-ol-eKl"/>
