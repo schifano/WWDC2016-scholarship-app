@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		295258551CD5DA8900B6CCF4 /* WWDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295258541CD5DA8900B6CCF4 /* WWDCViewController.swift */; };
 		2954C5001CD2EB08009E89D9 /* SlideCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954C4FF1CD2EB08009E89D9 /* SlideCollectionViewController.swift */; };
 		2954C5021CD53FC3009E89D9 /* SlideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954C5011CD53FC3009E89D9 /* SlideCollectionViewCell.swift */; };
 		2954C5041CD54158009E89D9 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954C5031CD54158009E89D9 /* Slide.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		295258541CD5DA8900B6CCF4 /* WWDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWDCViewController.swift; sourceTree = "<group>"; };
 		2954C4FF1CD2EB08009E89D9 /* SlideCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideCollectionViewController.swift; sourceTree = "<group>"; };
 		2954C5011CD53FC3009E89D9 /* SlideCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideCollectionViewCell.swift; sourceTree = "<group>"; };
 		2954C5031CD54158009E89D9 /* Slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			children = (
 				29FE1E8D1CD07E0E00707543 /* HomeViewController.swift */,
 				2954C4FF1CD2EB08009E89D9 /* SlideCollectionViewController.swift */,
+				295258541CD5DA8900B6CCF4 /* WWDCViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				2954C5061CD56D1C009E89D9 /* SlideCollectionViewFlowLayout.swift in Sources */,
 				29FE1E8E1CD07E0E00707543 /* HomeViewController.swift in Sources */,
 				2954C5041CD54158009E89D9 /* Slide.swift in Sources */,
+				295258551CD5DA8900B6CCF4 /* WWDCViewController.swift in Sources */,
 				2956D37D1CCB309F00359377 /* AppDelegate.swift in Sources */,
 				2954C5021CD53FC3009E89D9 /* SlideCollectionViewCell.swift in Sources */,
 			);

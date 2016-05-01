@@ -98,6 +98,9 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qu0-Sa-Rds">
                                 <rect key="frame" x="141" y="606" width="92" height="30"/>
                                 <state key="normal" title="Why WWDC?"/>
+                                <connections>
+                                    <segue destination="ZEu-Lm-RIq" kind="presentation" id="1G8-uE-gcn"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="RACHEL SCHIFANO" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4B-hM-9qE">
                                 <rect key="frame" x="88" y="59" width="199" height="116"/>
@@ -128,6 +131,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NXA-Na-mXe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-175.5" y="308.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Fzn-Gp-bim">
+            <objects>
+                <viewController id="ZEu-Lm-RIq" customClass="WWDCViewController" customModule="RachelSchifano" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2sN-bJ-MlD"/>
+                        <viewControllerLayoutGuide type="bottom" id="L8r-6n-JuK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l50-Ke-bUn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wwdc16" translatesAutoresizingMaskIntoConstraints="NO" id="o1c-3V-6ks">
+                                <rect key="frame" x="74" y="99" width="227" height="50"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecm-uE-lQc">
+                                <rect key="frame" x="74" y="157" width="227" height="401"/>
+                                <color key="backgroundColor" red="0.15686274509803921" green="0.16470588235294117" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">One year ago I missed the opportunity to apply for a WWDC 2015 scholarship. I wanted so badly to be like my friends and peers working on their apps but I wasn’t. Instead, I was directing Illinois State University’s first ever hackathon, RedbirdHacks. It was logistical chaos. I lost sleep and my mind, but the one thing I didn’t lose was the memory of missing out on the single most amazing opportunity as a passionate iOS Developer.
+
+So here I am a year later, fighting a sniffly nose and pulling an all-nighter just to have my chance. As my fellow ladies from Grace Hopper and Square College Code Camp like to remind me, “You miss 100% of the shots you don’t take." Here I go.</mutableString>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZQ-Hr-KQv">
+                                <rect key="frame" x="147" y="596" width="80" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Swoosh"/>
+                                <connections>
+                                    <action selector="swooshButtonTapped:" destination="ZEu-Lm-RIq" eventType="touchUpInside" id="3Ek-iX-Yyg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15686274509803921" green="0.16470588235294117" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nZP-mJ-hE6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-175.5" y="1096.5"/>
         </scene>
         <!--Slide Collection View Controller-->
         <scene sceneID="H3P-Of-xSa">
@@ -177,10 +221,10 @@
                                                 <constraint firstAttribute="bottom" secondItem="FIZ-D9-dnQ" secondAttribute="bottom" id="vtn-f9-dLU"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NUc-Sf-3gc" userLabel="Description View">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NUc-Sf-3gc" userLabel="Description View">
                                             <rect key="frame" x="35" y="507" width="300" height="130"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SLIDE TITLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zc-i3-P3x" userLabel="Slide Title">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SLIDE TITLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zc-i3-P3x" userLabel="Slide Title">
                                                     <rect key="frame" x="26" y="15" width="248" height="42"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="42" id="pZW-K1-CnY"/>
@@ -189,7 +233,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Description is going to fit into this label and hopefully not be super long." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zX1-Ni-o3j" userLabel="Slide Description">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description is going to fit into this label and hopefully not be super long." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zX1-Ni-o3j" userLabel="Slide Description">
                                                     <rect key="frame" x="26" y="64" width="248" height="61"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -216,6 +260,7 @@
                                     <constraint firstAttribute="trailingMargin" secondItem="NUc-Sf-3gc" secondAttribute="trailing" constant="32" id="HY1-bc-Zzp"/>
                                     <constraint firstItem="ixW-FB-zEs" firstAttribute="trailing" secondItem="C9X-j5-k61" secondAttribute="trailingMargin" id="XaX-Pb-w0t"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="B2V-k3-bYQ" secondAttribute="bottom" constant="-8" id="gQU-69-iiv"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="NUc-Sf-3gc" secondAttribute="bottom" constant="21" id="gq9-h5-48j"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="B2V-k3-bYQ" secondAttribute="trailing" constant="-8" id="iVj-5h-7Fx"/>
                                     <constraint firstItem="B2V-k3-bYQ" firstAttribute="leading" secondItem="C9X-j5-k61" secondAttribute="leadingMargin" constant="-8" id="l8m-3H-dK2"/>
                                     <constraint firstItem="ixW-FB-zEs" firstAttribute="leading" secondItem="C9X-j5-k61" secondAttribute="leadingMargin" constant="182" id="muV-i7-F2s"/>
@@ -249,6 +294,9 @@
             <point key="canvasLocation" x="259.5" y="308.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="wwdc16" width="216" height="46"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="fxr-4m-Htv"/>
     </inferredMetricsTieBreakers>

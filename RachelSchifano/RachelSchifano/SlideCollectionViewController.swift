@@ -44,7 +44,6 @@ class SlideCollectionViewController: UICollectionViewController {
         return true
     }
     
-    
     // MARK: Collection View Data Source
     /**
          Asks the data source for the number of items in the specified section. (required)
