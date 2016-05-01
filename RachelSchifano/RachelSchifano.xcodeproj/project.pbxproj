@@ -19,6 +19,10 @@
 		2956D3871CCB309F00359377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2956D3851CCB309F00359377 /* LaunchScreen.storyboard */; };
 		2956D3921CCB30A000359377 /* RachelSchifanoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956D3911CCB30A000359377 /* RachelSchifanoTests.swift */; };
 		2956D39D1CCB30A000359377 /* RachelSchifanoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956D39C1CCB30A000359377 /* RachelSchifanoUITests.swift */; };
+		297B997A1CD6834E00BB30CE /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297B99791CD6834E00BB30CE /* KeyboardViewController.swift */; };
+		297B997E1CD6834E00BB30CE /* StickerKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 297B99771CD6834E00BB30CE /* StickerKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		297B99841CD6848300BB30CE /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 297B99831CD6848300BB30CE /* KeyboardView.xib */; };
+		297B99851CD68E2800BB30CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2956D3831CCB309F00359377 /* Assets.xcassets */; };
 		29FE1E8C1CD07DEE00707543 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FE1E8B1CD07DEE00707543 /* Main.storyboard */; };
 		29FE1E8E1CD07E0E00707543 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FE1E8D1CD07E0E00707543 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -38,7 +42,28 @@
 			remoteGlobalIDString = 2956D3781CCB309F00359377;
 			remoteInfo = RachelSchifano;
 		};
+		297B997C1CD6834E00BB30CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2956D3711CCB309F00359377 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 297B99761CD6834E00BB30CE;
+			remoteInfo = StickerKeyboard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		297B99821CD6834E00BB30CE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				297B997E1CD6834E00BB30CE /* StickerKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		295258541CD5DA8900B6CCF4 /* WWDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWDCViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +84,10 @@
 		2956D3981CCB30A000359377 /* RachelSchifanoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RachelSchifanoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2956D39C1CCB30A000359377 /* RachelSchifanoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RachelSchifanoUITests.swift; sourceTree = "<group>"; };
 		2956D39E1CCB30A000359377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		297B99771CD6834E00BB30CE /* StickerKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StickerKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		297B99791CD6834E00BB30CE /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		297B997B1CD6834E00BB30CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		297B99831CD6848300BB30CE /* KeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
 		29FE1E8B1CD07DEE00707543 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		29FE1E8D1CD07E0E00707543 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +108,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2956D3951CCB30A000359377 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		297B99741CD6834E00BB30CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -123,6 +159,7 @@
 				2956D37B1CCB309F00359377 /* RachelSchifano */,
 				2956D3901CCB30A000359377 /* RachelSchifanoTests */,
 				2956D39B1CCB30A000359377 /* RachelSchifanoUITests */,
+				297B99781CD6834E00BB30CE /* StickerKeyboard */,
 				2956D37A1CCB309F00359377 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -133,6 +170,7 @@
 				2956D3791CCB309F00359377 /* RachelSchifano.app */,
 				2956D38D1CCB309F00359377 /* RachelSchifanoTests.xctest */,
 				2956D3981CCB30A000359377 /* RachelSchifanoUITests.xctest */,
+				297B99771CD6834E00BB30CE /* StickerKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,6 +208,16 @@
 			path = RachelSchifanoUITests;
 			sourceTree = "<group>";
 		};
+		297B99781CD6834E00BB30CE /* StickerKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				297B99791CD6834E00BB30CE /* KeyboardViewController.swift */,
+				297B99831CD6848300BB30CE /* KeyboardView.xib */,
+				297B997B1CD6834E00BB30CE /* Info.plist */,
+			);
+			path = StickerKeyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,10 +228,12 @@
 				2956D3751CCB309F00359377 /* Sources */,
 				2956D3761CCB309F00359377 /* Frameworks */,
 				2956D3771CCB309F00359377 /* Resources */,
+				297B99821CD6834E00BB30CE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				297B997D1CD6834E00BB30CE /* PBXTargetDependency */,
 			);
 			name = RachelSchifano;
 			productName = RachelSchifano;
@@ -226,13 +276,30 @@
 			productReference = 2956D3981CCB30A000359377 /* RachelSchifanoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		297B99761CD6834E00BB30CE /* StickerKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 297B99811CD6834E00BB30CE /* Build configuration list for PBXNativeTarget "StickerKeyboard" */;
+			buildPhases = (
+				297B99731CD6834E00BB30CE /* Sources */,
+				297B99741CD6834E00BB30CE /* Frameworks */,
+				297B99751CD6834E00BB30CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StickerKeyboard;
+			productName = StickerKeyboard;
+			productReference = 297B99771CD6834E00BB30CE /* StickerKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		2956D3711CCB309F00359377 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = schifano;
 				TargetAttributes = {
@@ -247,6 +314,10 @@
 					2956D3971CCB30A000359377 = {
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = 2956D3781CCB309F00359377;
+					};
+					297B99761CD6834E00BB30CE = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = MWRAZYEL66;
 					};
 				};
 			};
@@ -266,6 +337,7 @@
 				2956D3781CCB309F00359377 /* RachelSchifano */,
 				2956D38C1CCB309F00359377 /* RachelSchifanoTests */,
 				2956D3971CCB30A000359377 /* RachelSchifanoUITests */,
+				297B99761CD6834E00BB30CE /* StickerKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -292,6 +364,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		297B99751CD6834E00BB30CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				297B99851CD68E2800BB30CE /* Assets.xcassets in Resources */,
+				297B99841CD6848300BB30CE /* KeyboardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +411,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		297B99731CD6834E00BB30CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				297B997A1CD6834E00BB30CE /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -342,6 +431,11 @@
 			isa = PBXTargetDependency;
 			target = 2956D3781CCB309F00359377 /* RachelSchifano */;
 			targetProxy = 2956D3991CCB30A000359377 /* PBXContainerItemProxy */;
+		};
+		297B997D1CD6834E00BB30CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 297B99761CD6834E00BB30CE /* StickerKeyboard */;
+			targetProxy = 297B997C1CD6834E00BB30CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -444,6 +538,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RachelSchifano/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schifano.RachelSchifano;
@@ -458,6 +553,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RachelSchifano/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schifano.RachelSchifano;
@@ -514,6 +610,36 @@
 			};
 			name = Release;
 		};
+		297B997F1CD6834E00BB30CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = StickerKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.schifano.RachelSchifano.StickerKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		297B99801CD6834E00BB30CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = StickerKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.schifano.RachelSchifano.StickerKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -552,6 +678,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		297B99811CD6834E00BB30CE /* Build configuration list for PBXNativeTarget "StickerKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				297B997F1CD6834E00BB30CE /* Debug */,
+				297B99801CD6834E00BB30CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

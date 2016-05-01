@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="StickerKeyboard" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HhV-bd-I5D" userLabel="Row1">
+                    <rect key="frame" x="0.0" y="8" width="414" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24Z-Iw-tkO" userLabel="Row1Sticker1">
+                            <rect key="frame" x="40" y="0.0" width="100" height="100"/>
+                            <state key="normal" image="panda" backgroundImage="panda"/>
+                            <connections>
+                                <action selector="pandaStickerPressed:" destination="-1" eventType="touchUpInside" id="sIH-cg-eqd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pb9-57-e2f" userLabel="Row2Sticker2">
+                            <rect key="frame" x="148" y="0.0" width="100" height="100"/>
+                            <state key="normal" title="HELLO" image="salute" backgroundImage="salute"/>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="salute" translatesAutoresizingMaskIntoConstraints="NO" id="vkq-CF-R0N">
+                            <rect key="frame" x="267" y="0.0" width="100" height="100"/>
+                            <color key="backgroundColor" red="0.28584694746232264" green="0.94892466015967969" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="IT5-xw-BEM"/>
+                                <constraint firstAttribute="height" constant="100" id="WqF-Sd-Dok"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.57959453912079439" blue="0.9960421203592047" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Pb9-57-e2f" firstAttribute="leading" secondItem="24Z-Iw-tkO" secondAttribute="trailing" constant="8" id="3bR-ZH-kUw"/>
+                        <constraint firstAttribute="trailing" secondItem="vkq-CF-R0N" secondAttribute="trailing" constant="47" id="4Jn-b1-jk9"/>
+                        <constraint firstItem="vkq-CF-R0N" firstAttribute="top" secondItem="HhV-bd-I5D" secondAttribute="top" id="9bP-xc-EQf"/>
+                        <constraint firstItem="24Z-Iw-tkO" firstAttribute="top" secondItem="HhV-bd-I5D" secondAttribute="top" id="JHg-sa-MlA"/>
+                        <constraint firstItem="vkq-CF-R0N" firstAttribute="leading" secondItem="Pb9-57-e2f" secondAttribute="trailing" constant="19" id="Rw9-Ka-K0s"/>
+                        <constraint firstAttribute="bottom" secondItem="24Z-Iw-tkO" secondAttribute="bottom" id="VqR-aX-IAv"/>
+                        <constraint firstAttribute="height" constant="100" id="XxL-mw-fXN"/>
+                        <constraint firstItem="Pb9-57-e2f" firstAttribute="centerY" secondItem="HhV-bd-I5D" secondAttribute="centerY" id="ceE-Td-AhS"/>
+                        <constraint firstItem="24Z-Iw-tkO" firstAttribute="leading" secondItem="HhV-bd-I5D" secondAttribute="leading" constant="40" id="e5N-Ul-gH2"/>
+                        <constraint firstItem="24Z-Iw-tkO" firstAttribute="centerY" secondItem="HhV-bd-I5D" secondAttribute="centerY" id="qJp-bk-1jL"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dr-DO-mmw" userLabel="Row2">
+                    <rect key="frame" x="0.0" y="116" width="414" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slJ-B6-DNH" userLabel="Row1Sticker1">
+                            <rect key="frame" x="41" y="0.0" width="100" height="100"/>
+                            <state key="normal" image="panda"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Njz-VZ-U45" userLabel="Row2Sticker2">
+                            <rect key="frame" x="149" y="0.0" width="100" height="100"/>
+                            <state key="normal" image="salute"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.63133549241945053" green="1" blue="0.63403991376847524" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="QRc-Hh-YA4"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="zyN-uz-d8m"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9dr-DO-mmw" secondAttribute="trailing" id="QPb-U5-Keg"/>
+                <constraint firstItem="HhV-bd-I5D" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="WMi-rV-QD8"/>
+                <constraint firstItem="9dr-DO-mmw" firstAttribute="top" secondItem="HhV-bd-I5D" secondAttribute="bottom" constant="8" id="ZlK-YA-HsT"/>
+                <constraint firstAttribute="trailing" secondItem="HhV-bd-I5D" secondAttribute="trailing" id="bCr-Hn-62x"/>
+                <constraint firstItem="HhV-bd-I5D" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cMI-SK-NSP"/>
+                <constraint firstItem="9dr-DO-mmw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gSy-sT-jxj"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="panda" width="60" height="60"/>
+        <image name="salute" width="66" height="66"/>
+    </resources>
+</document>

@@ -161,9 +161,9 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecm-uE-lQc">
                                 <rect key="frame" x="74" y="167" width="227" height="401"/>
                                 <color key="backgroundColor" red="0.15686274509803921" green="0.16470588235294117" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">One year ago I missed the opportunity to apply for a WWDC 2015 scholarship. I wanted so badly to be like my friends and peers working on their apps but I wasn’t. Instead, I was directing Illinois State University’s first ever hackathon, RedbirdHacks. It was logistical chaos. I lost sleep and my mind, but the one thing I didn’t lose was the memory of missing out on the single most amazing opportunity as a passionate iOS Developer.
+                                <mutableString key="text">One year ago I missed the opportunity to apply for a WWDC 2015 scholarship. I wanted so badly to be like my friends and peers working on their apps but I wasn’t. Instead, I was directing Illinois State University’s first ever hackathon, RedbirdHacks. It was logistical chaos. I lost sleep and my mind, but the one thing I didn’t lose was the memory of missing out on the single most amazing opportunity as a passionate iOS Developer.
 
-So here I am a year later, fighting a sniffly nose and pulling an all-nighter just to have my chance. As my fellow ladies from Grace Hopper and Square College Code Camp like to remind me, “You miss 100% of the shots you don’t take." Here I go.</string>
+So here I am a year later, fighting a sniffly nose and pulling an all-nighter just to have my chance. As my fellow ladies from Grace Hopper and Square College Code Camp like to remind me, “You miss 100% of the shots you don’t take." Here I go.</mutableString>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

@@ -152,7 +152,7 @@ class SlideCollectionViewController: UICollectionViewController {
                 "image": "4-midwest",
                 "hashtag": "#Midwest",
                 "title": "MIDWEST VIBES",
-                "description": "Where nothingness is beauty."
+                "description": "Grew up in Normal, IL. Where nothingness is beauty."
             ], [
                 "image": "5-illinoisstate",
                 "hashtag": "#IllinoisState",
