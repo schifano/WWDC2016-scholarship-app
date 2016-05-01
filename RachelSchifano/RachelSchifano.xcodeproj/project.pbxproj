@@ -10,6 +10,7 @@
 		2954C5001CD2EB08009E89D9 /* SlideCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954C4FF1CD2EB08009E89D9 /* SlideCollectionViewController.swift */; };
 		2954C5021CD53FC3009E89D9 /* SlideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954C5011CD53FC3009E89D9 /* SlideCollectionViewCell.swift */; };
 		2954C5041CD54158009E89D9 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954C5031CD54158009E89D9 /* Slide.swift */; };
+		2954C5061CD56D1C009E89D9 /* SlideCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954C5051CD56D1B009E89D9 /* SlideCollectionViewFlowLayout.swift */; };
 		2956D37D1CCB309F00359377 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956D37C1CCB309F00359377 /* AppDelegate.swift */; };
 		2956D37F1CCB309F00359377 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956D37E1CCB309F00359377 /* ScrollViewController.swift */; };
 		2956D3821CCB309F00359377 /* ScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2956D3801CCB309F00359377 /* ScrollView.storyboard */; };
@@ -42,6 +43,7 @@
 		2954C4FF1CD2EB08009E89D9 /* SlideCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideCollectionViewController.swift; sourceTree = "<group>"; };
 		2954C5011CD53FC3009E89D9 /* SlideCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideCollectionViewCell.swift; sourceTree = "<group>"; };
 		2954C5031CD54158009E89D9 /* Slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		2954C5051CD56D1B009E89D9 /* SlideCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		2956D3791CCB309F00359377 /* RachelSchifano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RachelSchifano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2956D37C1CCB309F00359377 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2956D37E1CCB309F00359377 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				2954C5011CD53FC3009E89D9 /* SlideCollectionViewCell.swift */,
+				2954C5051CD56D1B009E89D9 /* SlideCollectionViewFlowLayout.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				TargetAttributes = {
 					2956D3781CCB309F00359377 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = MWRAZYEL66;
 					};
 					2956D38C1CCB309F00359377 = {
 						CreatedOnToolsVersion = 7.2;
@@ -297,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2954C5001CD2EB08009E89D9 /* SlideCollectionViewController.swift in Sources */,
+				2954C5061CD56D1C009E89D9 /* SlideCollectionViewFlowLayout.swift in Sources */,
 				29FE1E8E1CD07E0E00707543 /* ViewController.swift in Sources */,
 				2956D37F1CCB309F00359377 /* ScrollViewController.swift in Sources */,
 				2954C5041CD54158009E89D9 /* Slide.swift in Sources */,
@@ -441,10 +446,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RachelSchifano/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schifano.RachelSchifano;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -452,10 +460,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RachelSchifano/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schifano.RachelSchifano;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

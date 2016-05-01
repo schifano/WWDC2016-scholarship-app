@@ -20,7 +20,8 @@ class SlideCollectionViewController: UICollectionViewController {
  
         // Set dimension of collection view cells to be size of screen
         flowLayout.itemSize = CGSizeMake(self.view.frame.width, self.view.frame.height)
-    
+        // FIXME: Temporary fix for the cell gap issue
+        flowLayout.minimumLineSpacing = 0
     }
     
     // TODO: Hide the status bar

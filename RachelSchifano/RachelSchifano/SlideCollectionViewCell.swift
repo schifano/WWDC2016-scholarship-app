@@ -15,4 +15,5 @@ class SlideCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var slideHashtagText: UILabel!
     @IBOutlet weak var slideTitleText: UILabel!
     @IBOutlet weak var slideDescriptionText: UILabel!
+    
 }
