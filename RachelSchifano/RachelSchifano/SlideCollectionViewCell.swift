@@ -18,7 +18,7 @@ class SlideCollectionViewCell: UICollectionViewCell {
  
     // MARK: Parallax cell
     @IBOutlet weak var parallaxHeightConstraint: NSLayoutConstraint!
-    @IBOutlet weak var parallaxTopConstraint: NSLayoutConstraint!
+//    @IBOutlet weak var parallaxTopConstraint: NSLayoutConstraint!
     
     override func awakeFromNib() {
         super.awakeFromNib()

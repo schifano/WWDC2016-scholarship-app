@@ -72,7 +72,7 @@ class SlideCollectionViewController: UICollectionViewController {
         cell.slideImageView.image = slideImage
         
         cell.parallaxHeightConstraint.constant = parallaxImageHeight
-        cell.parallaxTopConstraint.constant = parallaxOffsetFor(slideCollectionView.contentOffset.y, cell: cell)
+//        cell.parallaxTopConstraint.constant = parallaxOffsetFor(slideCollectionView.contentOffset.y, cell: cell)
         
         // Set hashtag
         cell.slideHashtagText.text = slide["hashtag"] as? String
@@ -111,7 +111,7 @@ class SlideCollectionViewController: UICollectionViewController {
     override func scrollViewDidScroll(scrollView: UIScrollView) {
         let offsetY = slideCollectionView.contentOffset.y
         for cell in slideCollectionView.visibleCells() as! [SlideCollectionViewCell] {
-            cell.parallaxTopConstraint.constant = parallaxOffsetFor(offsetY, cell: cell)
+//            cell.parallaxTopConstraint.constant = parallaxOffsetFor(offsetY, cell: cell)
         }
     }
     

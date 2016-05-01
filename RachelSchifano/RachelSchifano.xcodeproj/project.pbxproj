@@ -12,8 +12,6 @@
 		2954C5041CD54158009E89D9 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954C5031CD54158009E89D9 /* Slide.swift */; };
 		2954C5061CD56D1C009E89D9 /* SlideCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954C5051CD56D1B009E89D9 /* SlideCollectionViewFlowLayout.swift */; };
 		2956D37D1CCB309F00359377 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956D37C1CCB309F00359377 /* AppDelegate.swift */; };
-		2956D37F1CCB309F00359377 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956D37E1CCB309F00359377 /* ScrollViewController.swift */; };
-		2956D3821CCB309F00359377 /* ScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2956D3801CCB309F00359377 /* ScrollView.storyboard */; };
 		2956D3841CCB309F00359377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2956D3831CCB309F00359377 /* Assets.xcassets */; };
 		2956D3871CCB309F00359377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2956D3851CCB309F00359377 /* LaunchScreen.storyboard */; };
 		2956D3921CCB30A000359377 /* RachelSchifanoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956D3911CCB30A000359377 /* RachelSchifanoTests.swift */; };
@@ -46,8 +44,6 @@
 		2954C5051CD56D1B009E89D9 /* SlideCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		2956D3791CCB309F00359377 /* RachelSchifano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RachelSchifano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2956D37C1CCB309F00359377 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2956D37E1CCB309F00359377 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
-		2956D3811CCB309F00359377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ScrollView.storyboard; sourceTree = "<group>"; };
 		2956D3831CCB309F00359377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2956D3861CCB309F00359377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2956D3881CCB309F00359377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,9 +135,7 @@
 				2954C4FB1CD2EA4E009E89D9 /* View */,
 				2954C4FC1CD2EA5F009E89D9 /* Controller */,
 				2956D37C1CCB309F00359377 /* AppDelegate.swift */,
-				2956D3801CCB309F00359377 /* ScrollView.storyboard */,
 				29FE1E8B1CD07DEE00707543 /* Main.storyboard */,
-				2956D37E1CCB309F00359377 /* ScrollViewController.swift */,
 				2956D3831CCB309F00359377 /* Assets.xcassets */,
 				2956D3851CCB309F00359377 /* LaunchScreen.storyboard */,
 				2956D3881CCB309F00359377 /* Info.plist */,
@@ -274,7 +268,6 @@
 			files = (
 				2956D3871CCB309F00359377 /* LaunchScreen.storyboard in Resources */,
 				2956D3841CCB309F00359377 /* Assets.xcassets in Resources */,
-				2956D3821CCB309F00359377 /* ScrollView.storyboard in Resources */,
 				29FE1E8C1CD07DEE00707543 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,7 +296,6 @@
 				2954C5001CD2EB08009E89D9 /* SlideCollectionViewController.swift in Sources */,
 				2954C5061CD56D1C009E89D9 /* SlideCollectionViewFlowLayout.swift in Sources */,
 				29FE1E8E1CD07E0E00707543 /* HomeViewController.swift in Sources */,
-				2956D37F1CCB309F00359377 /* ScrollViewController.swift in Sources */,
 				2954C5041CD54158009E89D9 /* Slide.swift in Sources */,
 				2956D37D1CCB309F00359377 /* AppDelegate.swift in Sources */,
 				2954C5021CD53FC3009E89D9 /* SlideCollectionViewCell.swift in Sources */,
@@ -342,14 +334,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2956D3801CCB309F00359377 /* ScrollView.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2956D3811CCB309F00359377 /* Base */,
-			);
-			name = ScrollView.storyboard;
-			sourceTree = "<group>";
-		};
 		2956D3851CCB309F00359377 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
