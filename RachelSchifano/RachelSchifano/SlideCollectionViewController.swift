@@ -10,9 +10,11 @@ import Foundation
 import UIKit
 
 class SlideCollectionViewController: UICollectionViewController {
-
+    
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     @IBOutlet weak var slideCollectionView: UICollectionView!
+    
+    var buttonSelected: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,8 @@ class SlideCollectionViewController: UICollectionViewController {
         flowLayout.itemSize = CGSizeMake(self.view.frame.width, self.view.frame.height)
         // FIXME: Temporary fix for the cell gap issue
         flowLayout.minimumLineSpacing = 0
+        
+        prefersStatusBarHidden()
     }
     
     // TODO: Hide the status bar
@@ -39,13 +43,28 @@ class SlideCollectionViewController: UICollectionViewController {
          - returns: memes.count The number of rows (memes) in section
      */
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return hardCodedAboutData().count
+        // FIXME: Add last image to about (SF)
+        //        return hardCodedAboutData().count ... They should have 8 though
+        return 7
     }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("SlideCollectionViewCell", forIndexPath: indexPath) as! SlideCollectionViewCell
-        // Access each slide object
-        let slide = hardCodedAboutData()[indexPath.row]
+        
+        // Load data corresponding to button tapped
+        var slide = [String: AnyObject]()
+        switch buttonSelected {
+            case "ABOUT":
+                slide = hardCodedAboutData()[indexPath.row]
+            case "ACHIEVEMENTS":
+                slide = hardCodedAchievementsData()[indexPath.row]
+            case "AMBITIONS":
+                slide = hardCodedAmbitionsData()[indexPath.row]
+            case "APPS":
+                slide = hardCodedAppsData()[indexPath.row]
+            default:
+                break
+        }
         
         // Set image
         let slideImageName = slide["image"] as! String
@@ -138,4 +157,101 @@ class SlideCollectionViewController: UICollectionViewController {
         ]
     }
     
+    func hardCodedAchievementsData() ->[[String: AnyObject]] {
+        return [
+            [
+                "image": "9-niaf",
+                "hashtag": "#VoyageOfDiscovery",
+                "title": "HERITAGE",
+                "description": "Scholarship winner. 10-day trip. 500 applicants. National Italian American Foundation."
+            ], [
+                "image": "10-redbirdhacks",
+                "hashtag": "#RedbirdHacks",
+                "title": "DIRECTOR",
+                "description": "Founded. Raised $16,000. First hackathon at Illinois State."
+            ], [
+                "image": "11-square",
+                "hashtag": "#Square",
+                "title": "CODE CAMPER",
+                "description": "5-day engineering program. 600 applicants."
+            ], [
+                "image": "12-hackcon",
+                "hashtag": "#Hackcon",
+                "title": "ORGANIZER",
+                "description": "Hackathon organizer conference. Hackcon II (New YorK) & III (San Francisco)."
+            ], [
+                "image": "13-hackathons",
+                "hashtag": "#Hackathons",
+                "title": "STREET CRED",
+                "description": "State Farm Hack Day 2014 Winner ($10,000), participated in 8 hackathons."
+            ], [
+                "image": "14-gracehopper",
+                "hashtag": "#GraceHopperConference",
+                "title": "ACTIVIST",
+                "description": "Advocate for diversity and inclusion, self-motivated."
+            ], [
+                "image": "15-womentech",
+                "hashtag": "#GoogleChicago",
+                "title": "WOMEN TECHMAKER",
+                "description": "Women Techmaker member, International Women's Day Summit participant"
+            ], [
+                "image": "16-ferrari",
+                "hashtag": "#Ferrari458Italia",
+                "title": "RACING",
+                "description": "Raced a Ferrari 458 Italia using a wet driving line on a rainy day. Didn't even cry."
+            ]
+        ]
+    }
+    
+    func hardCodedAmbitionsData() ->[[String: AnyObject]] {
+        return [
+            [
+                "image": "17-wheel",
+                "hashtag": "#Engineering",
+                "title": "MY PASSION",
+                "description": "Any intersection of engineering, I want to know it."
+            ], [
+                "image": "18-bridge",
+                "hashtag": "#BayArea",
+                "title": "MY FUTURE",
+                "description": "Gaining XP so I can level up."
+            ], [
+                "image": "19-automechanics",
+                "hashtag": "#Automechanics",
+                "title": "MY CRAVING",
+                "description": "Learning is the first thing, being a mechanic is the next. Engines are cool."
+            ], [
+                "image": "20-ios",
+                "hashtag": "#iOSDevelopment",
+                "title": "MY NICHE",
+                "description": "I do iOS today and I'm doing iOS in my future."
+            ], [
+                "image": "21-plane",
+                "hashtag": "#",
+                "title": "",
+                "description": ""
+            ], [
+                "image": "22-controller",
+                "hashtag": "#DJing",
+                "title": "",
+                "description": ""
+            ], [
+                "image": "23-guitars",
+                "hashtag": "#MusicProduction",
+                "title": "MY JAM",
+                "description": "Ableton, guitar riffs, mixes. I want to produce music."
+            ], [
+                "image": "24-burgers",
+                "hashtag": "#Cheeseburgers",
+                "title": "MY FAVES",
+                "description": "Steak n' Shake fan. Not sold on In-N-Out. Still trying."
+            ]
+        ]
+    }
+    
+    // FIXME: Add information about apps
+    func hardCodedAppsData() ->[[String: AnyObject]] {
+        return [
+        ]
+    }
 }

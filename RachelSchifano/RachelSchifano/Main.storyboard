@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="4mW-oA-wnX">
             <objects>
-                <viewController id="aIv-wz-jzi" customClass="ViewController" customModule="RachelSchifano" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aIv-wz-jzi" customClass="HomeViewController" customModule="RachelSchifano" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NRh-E3-qFA"/>
                         <viewControllerLayoutGuide type="bottom" id="IBM-py-zUn"/>
@@ -18,55 +18,110 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1aP-AO-3cg">
-                                <rect key="frame" x="50" y="122" width="274" height="443"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1aP-AO-3cg">
+                                <rect key="frame" x="50" y="202" width="274" height="241"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCq-k8-pvE">
-                                        <rect key="frame" x="50" y="153" width="174" height="40"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCq-k8-pvE">
+                                        <rect key="frame" x="62" y="73" width="144" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="oWh-Vr-cfK"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                         <state key="normal" title="ACHIEVEMENTS">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="achievementsButtonTapped:" destination="aIv-wz-jzi" eventType="touchUpInside" id="5gk-vy-27t"/>
+                                            <segue destination="ZOJ-VU-hGa" kind="show" id="9pI-gU-hpo"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJC-VQ-zwb">
-                                        <rect key="frame" x="66" y="200" width="136" height="42"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJC-VQ-zwb">
+                                        <rect key="frame" x="62" y="121" width="144" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="lAJ-dE-wo3"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                         <state key="normal" title="AMBITIONS">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="ambitionsButtonTapped:" destination="aIv-wz-jzi" eventType="touchUpInside" id="8Ng-S8-QGw"/>
+                                            <segue destination="ZOJ-VU-hGa" kind="show" id="Z98-4b-RLk"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssh-Yg-QKi">
-                                        <rect key="frame" x="69" y="103" width="124" height="42"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bys-NY-FiH">
+                                        <rect key="frame" x="62" y="169" width="144" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="9EF-TT-dm1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <state key="normal" title="APPS">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="appsButtonTapped:" destination="aIv-wz-jzi" eventType="touchUpInside" id="qE3-U8-BEE"/>
+                                            <segue destination="ZOJ-VU-hGa" kind="show" id="fmK-Gi-zKV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssh-Yg-QKi">
+                                        <rect key="frame" x="62" y="25" width="144" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="5Hs-cr-guf"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                         <state key="normal" title="ABOUT">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="aboutButtonTapped:" destination="aIv-wz-jzi" eventType="touchUpInside" id="soH-xs-O9Q"/>
                                             <segue destination="ZOJ-VU-hGa" kind="show" id="fxr-4m-Htv"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bys-NY-FiH">
-                                        <rect key="frame" x="66" y="249" width="136" height="42"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                        <state key="normal" title="APPS">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="bys-NY-FiH" secondAttribute="trailing" constant="68" id="0tY-3d-d2K"/>
+                                    <constraint firstItem="nJC-VQ-zwb" firstAttribute="leading" secondItem="1aP-AO-3cg" secondAttribute="leading" constant="62" id="InL-nu-bPA"/>
+                                    <constraint firstItem="ssh-Yg-QKi" firstAttribute="leading" secondItem="1aP-AO-3cg" secondAttribute="leading" constant="62" id="J3P-1L-F8i"/>
+                                    <constraint firstItem="lCq-k8-pvE" firstAttribute="top" secondItem="ssh-Yg-QKi" secondAttribute="bottom" constant="8" id="MEb-iw-nwD"/>
+                                    <constraint firstAttribute="trailing" secondItem="lCq-k8-pvE" secondAttribute="trailing" constant="68" id="NxF-Z7-FaH"/>
+                                    <constraint firstItem="bys-NY-FiH" firstAttribute="top" secondItem="nJC-VQ-zwb" secondAttribute="bottom" constant="8" id="cJ8-SL-opr"/>
+                                    <constraint firstAttribute="bottom" secondItem="bys-NY-FiH" secondAttribute="bottom" constant="32" id="chi-ly-f9e"/>
+                                    <constraint firstAttribute="trailing" secondItem="nJC-VQ-zwb" secondAttribute="trailing" constant="68" id="d27-jr-ngM"/>
+                                    <constraint firstItem="bys-NY-FiH" firstAttribute="leading" secondItem="1aP-AO-3cg" secondAttribute="leading" constant="62" id="lL7-h3-DOj"/>
+                                    <constraint firstItem="nJC-VQ-zwb" firstAttribute="top" secondItem="lCq-k8-pvE" secondAttribute="bottom" constant="8" id="lmG-iP-fbl"/>
+                                    <constraint firstItem="ssh-Yg-QKi" firstAttribute="top" secondItem="1aP-AO-3cg" secondAttribute="top" constant="25" id="qeG-Zc-E0U"/>
+                                    <constraint firstAttribute="trailing" secondItem="ssh-Yg-QKi" secondAttribute="trailing" constant="68" id="uTz-1J-dL2"/>
+                                    <constraint firstItem="lCq-k8-pvE" firstAttribute="leading" secondItem="1aP-AO-3cg" secondAttribute="leading" constant="62" id="zuO-GC-l3K"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qu0-Sa-Rds">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qu0-Sa-Rds">
                                 <rect key="frame" x="141" y="606" width="92" height="30"/>
                                 <state key="normal" title="Why WWDC?"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RACHEL SCHIFANO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4B-hM-9qE">
-                                <rect key="frame" x="50" y="56" width="275" height="49"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="RACHEL SCHIFANO" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4B-hM-9qE">
+                                <rect key="frame" x="88" y="59" width="199" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="HiC-Zq-CTQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="1aP-AO-3cg" secondAttribute="trailing" constant="31" id="5hW-Ym-wiZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y4B-hM-9qE" secondAttribute="trailing" constant="68" id="7un-oE-T8j"/>
+                            <constraint firstItem="qu0-Sa-Rds" firstAttribute="top" secondItem="1aP-AO-3cg" secondAttribute="bottom" constant="163" id="CkY-6L-5Lk"/>
+                            <constraint firstItem="1aP-AO-3cg" firstAttribute="top" secondItem="Y4B-hM-9qE" secondAttribute="bottom" constant="27" id="E8I-IQ-l5q"/>
+                            <constraint firstItem="Y4B-hM-9qE" firstAttribute="top" secondItem="NRh-E3-qFA" secondAttribute="bottom" constant="39" id="eD0-zW-Kws"/>
+                            <constraint firstItem="Y4B-hM-9qE" firstAttribute="leading" secondItem="5f9-ez-SdR" secondAttribute="leadingMargin" constant="68" id="fb1-wj-ymO"/>
+                            <constraint firstItem="qu0-Sa-Rds" firstAttribute="leading" secondItem="5f9-ez-SdR" secondAttribute="leadingMargin" constant="121" id="gFl-gX-p6T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qu0-Sa-Rds" secondAttribute="trailing" constant="122" id="iTW-2k-JJt"/>
+                            <constraint firstItem="IBM-py-zUn" firstAttribute="top" secondItem="qu0-Sa-Rds" secondAttribute="bottom" constant="31" id="pJw-aY-j8J"/>
+                            <constraint firstItem="1aP-AO-3cg" firstAttribute="leading" secondItem="5f9-ez-SdR" secondAttribute="leadingMargin" constant="30" id="zTd-uA-ULw"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -197,4 +252,7 @@
             <point key="canvasLocation" x="259.5" y="308.5"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fxr-4m-Htv"/>
+    </inferredMetricsTieBreakers>
 </document>

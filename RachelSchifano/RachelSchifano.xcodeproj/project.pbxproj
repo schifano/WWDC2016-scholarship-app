@@ -19,7 +19,7 @@
 		2956D3921CCB30A000359377 /* RachelSchifanoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956D3911CCB30A000359377 /* RachelSchifanoTests.swift */; };
 		2956D39D1CCB30A000359377 /* RachelSchifanoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2956D39C1CCB30A000359377 /* RachelSchifanoUITests.swift */; };
 		29FE1E8C1CD07DEE00707543 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FE1E8B1CD07DEE00707543 /* Main.storyboard */; };
-		29FE1E8E1CD07E0E00707543 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FE1E8D1CD07E0E00707543 /* ViewController.swift */; };
+		29FE1E8E1CD07E0E00707543 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FE1E8D1CD07E0E00707543 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,7 @@
 		2956D39C1CCB30A000359377 /* RachelSchifanoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RachelSchifanoUITests.swift; sourceTree = "<group>"; };
 		2956D39E1CCB30A000359377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29FE1E8B1CD07DEE00707543 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		29FE1E8D1CD07E0E00707543 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		29FE1E8D1CD07E0E00707543 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,7 @@
 		2954C4FC1CD2EA5F009E89D9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				29FE1E8D1CD07E0E00707543 /* ViewController.swift */,
+				29FE1E8D1CD07E0E00707543 /* HomeViewController.swift */,
 				2954C4FF1CD2EB08009E89D9 /* SlideCollectionViewController.swift */,
 			);
 			name = Controller;
@@ -302,7 +302,7 @@
 			files = (
 				2954C5001CD2EB08009E89D9 /* SlideCollectionViewController.swift in Sources */,
 				2954C5061CD56D1C009E89D9 /* SlideCollectionViewFlowLayout.swift in Sources */,
-				29FE1E8E1CD07E0E00707543 /* ViewController.swift in Sources */,
+				29FE1E8E1CD07E0E00707543 /* HomeViewController.swift in Sources */,
 				2956D37F1CCB309F00359377 /* ScrollViewController.swift in Sources */,
 				2954C5041CD54158009E89D9 /* Slide.swift in Sources */,
 				2956D37D1CCB309F00359377 /* AppDelegate.swift in Sources */,
