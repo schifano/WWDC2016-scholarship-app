@@ -19,6 +19,11 @@ class SlideCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Implement swipe gesture
+        let downSwipe = UISwipeGestureRecognizer(target: self, action: #selector(SlideCollectionViewController.handleDownSwipe(_:)))
+        downSwipe.direction = .Down
+        view.addGestureRecognizer(downSwipe)
+        
         // FIXME: Add minimumLineSpacing gap for design
         // Set dimension of collection view cells to be size of screen
         flowLayout.itemSize = CGSizeMake(self.view.frame.width, self.view.frame.height)
@@ -26,6 +31,10 @@ class SlideCollectionViewController: UICollectionViewController {
         flowLayout.minimumLineSpacing = 0
         
         prefersStatusBarHidden()
+    }
+    
+    func handleDownSwipe(sender: UISwipeGestureRecognizer) {
+        print("Swiped down") // TEST
     }
     
     // TODO: Hide the status bar
