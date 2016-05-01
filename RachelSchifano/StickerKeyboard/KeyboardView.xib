@@ -14,74 +14,111 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HhV-bd-I5D" userLabel="Row1">
                     <rect key="frame" x="0.0" y="8" width="414" height="100"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24Z-Iw-tkO" userLabel="Row1Sticker1">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24Z-Iw-tkO" userLabel="Row1Sticker1">
                             <rect key="frame" x="40" y="0.0" width="100" height="100"/>
-                            <state key="normal" image="panda" backgroundImage="panda"/>
+                            <state key="normal" image="sticker-bear"/>
                             <connections>
                                 <action selector="pandaStickerPressed:" destination="-1" eventType="touchUpInside" id="sIH-cg-eqd"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pb9-57-e2f" userLabel="Row2Sticker2">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pb9-57-e2f" userLabel="Row2Sticker2">
                             <rect key="frame" x="148" y="0.0" width="100" height="100"/>
-                            <state key="normal" title="HELLO" image="salute" backgroundImage="salute"/>
-                        </button>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="salute" translatesAutoresizingMaskIntoConstraints="NO" id="vkq-CF-R0N">
-                            <rect key="frame" x="267" y="0.0" width="100" height="100"/>
-                            <color key="backgroundColor" red="0.28584694746232264" green="0.94892466015967969" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="100" id="IT5-xw-BEM"/>
-                                <constraint firstAttribute="height" constant="100" id="WqF-Sd-Dok"/>
+                                <constraint firstAttribute="height" constant="100" id="BSj-Sb-7yj"/>
+                                <constraint firstAttribute="width" constant="100" id="t1h-VR-EuU"/>
                             </constraints>
-                        </imageView>
+                            <state key="normal" title="HELLO" image="sticker-burger"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHf-f3-JMH">
+                            <rect key="frame" x="264" y="0.0" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="PBJ-SN-BaB"/>
+                                <constraint firstAttribute="height" constant="100" id="vMf-kv-BD3"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="sticker-heart"/>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="1" green="0.57959453912079439" blue="0.9960421203592047" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="Pb9-57-e2f" firstAttribute="leading" secondItem="24Z-Iw-tkO" secondAttribute="trailing" constant="8" id="3bR-ZH-kUw"/>
-                        <constraint firstAttribute="trailing" secondItem="vkq-CF-R0N" secondAttribute="trailing" constant="47" id="4Jn-b1-jk9"/>
-                        <constraint firstItem="vkq-CF-R0N" firstAttribute="top" secondItem="HhV-bd-I5D" secondAttribute="top" id="9bP-xc-EQf"/>
+                        <constraint firstItem="Pb9-57-e2f" firstAttribute="top" secondItem="HhV-bd-I5D" secondAttribute="top" id="7o1-iE-hpi"/>
+                        <constraint firstAttribute="trailing" secondItem="vHf-f3-JMH" secondAttribute="trailing" constant="50" id="FM9-Th-6qX"/>
                         <constraint firstItem="24Z-Iw-tkO" firstAttribute="top" secondItem="HhV-bd-I5D" secondAttribute="top" id="JHg-sa-MlA"/>
-                        <constraint firstItem="vkq-CF-R0N" firstAttribute="leading" secondItem="Pb9-57-e2f" secondAttribute="trailing" constant="19" id="Rw9-Ka-K0s"/>
                         <constraint firstAttribute="bottom" secondItem="24Z-Iw-tkO" secondAttribute="bottom" id="VqR-aX-IAv"/>
                         <constraint firstAttribute="height" constant="100" id="XxL-mw-fXN"/>
                         <constraint firstItem="Pb9-57-e2f" firstAttribute="centerY" secondItem="HhV-bd-I5D" secondAttribute="centerY" id="ceE-Td-AhS"/>
+                        <constraint firstItem="Pb9-57-e2f" firstAttribute="centerY" secondItem="HhV-bd-I5D" secondAttribute="centerY" id="dOv-dc-fd6"/>
                         <constraint firstItem="24Z-Iw-tkO" firstAttribute="leading" secondItem="HhV-bd-I5D" secondAttribute="leading" constant="40" id="e5N-Ul-gH2"/>
+                        <constraint firstItem="vHf-f3-JMH" firstAttribute="top" secondItem="HhV-bd-I5D" secondAttribute="top" id="ePd-oy-93d"/>
                         <constraint firstItem="24Z-Iw-tkO" firstAttribute="centerY" secondItem="HhV-bd-I5D" secondAttribute="centerY" id="qJp-bk-1jL"/>
+                        <constraint firstItem="vHf-f3-JMH" firstAttribute="leading" secondItem="Pb9-57-e2f" secondAttribute="trailing" constant="16" id="qdg-TJ-jR7"/>
+                        <constraint firstItem="Pb9-57-e2f" firstAttribute="leading" secondItem="24Z-Iw-tkO" secondAttribute="trailing" constant="8" id="zdX-AJ-Cxk"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dr-DO-mmw" userLabel="Row2">
-                    <rect key="frame" x="0.0" y="116" width="414" height="100"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pqg-zh-LVc" userLabel="Row2">
+                    <rect key="frame" x="0.0" y="108" width="414" height="100"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slJ-B6-DNH" userLabel="Row1Sticker1">
-                            <rect key="frame" x="41" y="0.0" width="100" height="100"/>
-                            <state key="normal" image="panda"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqH-yZ-rZq" userLabel="Row1Sticker1">
+                            <rect key="frame" x="40" y="0.0" width="100" height="100"/>
+                            <state key="normal" image="sticker-also"/>
+                            <connections>
+                                <action selector="pandaStickerPressed:" destination="-1" eventType="touchUpInside" id="EIS-uc-Txw"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Njz-VZ-U45" userLabel="Row2Sticker2">
-                            <rect key="frame" x="149" y="0.0" width="100" height="100"/>
-                            <state key="normal" image="salute"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJt-Cq-FCB" userLabel="Row2Sticker2">
+                            <rect key="frame" x="148" y="0.0" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="iIm-aB-znR"/>
+                                <constraint firstAttribute="height" constant="100" id="sjV-Rq-oua"/>
+                            </constraints>
+                            <state key="normal" title="HELLO" image="sticker-illinois"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88T-C4-7PU">
+                            <rect key="frame" x="264" y="0.0" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="DsD-jp-1A8"/>
+                                <constraint firstAttribute="height" constant="100" id="VYh-Y1-So6"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="sticker-flag"/>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.63133549241945053" green="1" blue="0.63403991376847524" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.59687780105289823" green="1" blue="0.66370909291034708" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="100" id="QRc-Hh-YA4"/>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="zyN-uz-d8m"/>
+                        <constraint firstAttribute="bottom" secondItem="sqH-yZ-rZq" secondAttribute="bottom" id="25e-aS-Q6k"/>
+                        <constraint firstItem="88T-C4-7PU" firstAttribute="leading" secondItem="FJt-Cq-FCB" secondAttribute="trailing" constant="16" id="4jI-hR-avU"/>
+                        <constraint firstItem="FJt-Cq-FCB" firstAttribute="leading" secondItem="sqH-yZ-rZq" secondAttribute="trailing" constant="8" id="6tB-Sa-4PT"/>
+                        <constraint firstItem="sqH-yZ-rZq" firstAttribute="leading" secondItem="pqg-zh-LVc" secondAttribute="leading" constant="40" id="HjM-mh-lxb"/>
+                        <constraint firstItem="88T-C4-7PU" firstAttribute="top" secondItem="pqg-zh-LVc" secondAttribute="top" id="T4q-Eb-R3C"/>
+                        <constraint firstItem="sqH-yZ-rZq" firstAttribute="centerY" secondItem="pqg-zh-LVc" secondAttribute="centerY" id="VGm-id-miw"/>
+                        <constraint firstItem="FJt-Cq-FCB" firstAttribute="top" secondItem="pqg-zh-LVc" secondAttribute="top" id="Xdk-Eg-OBX"/>
+                        <constraint firstItem="FJt-Cq-FCB" firstAttribute="centerY" secondItem="pqg-zh-LVc" secondAttribute="centerY" id="cFe-cs-GVr"/>
+                        <constraint firstItem="FJt-Cq-FCB" firstAttribute="centerY" secondItem="pqg-zh-LVc" secondAttribute="centerY" id="car-GE-cAe"/>
+                        <constraint firstAttribute="height" constant="100" id="cst-jy-309"/>
+                        <constraint firstItem="FJt-Cq-FCB" firstAttribute="leading" secondItem="sqH-yZ-rZq" secondAttribute="trailing" constant="8" id="f4l-Ss-zLS"/>
+                        <constraint firstItem="sqH-yZ-rZq" firstAttribute="top" secondItem="pqg-zh-LVc" secondAttribute="top" id="msr-98-a0o"/>
+                        <constraint firstAttribute="trailing" secondItem="88T-C4-7PU" secondAttribute="trailing" constant="50" id="peR-1g-oEq"/>
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.64285015495552122" green="0.64577326890626563" blue="0.6895912247474747" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="9dr-DO-mmw" secondAttribute="trailing" id="QPb-U5-Keg"/>
                 <constraint firstItem="HhV-bd-I5D" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="WMi-rV-QD8"/>
-                <constraint firstItem="9dr-DO-mmw" firstAttribute="top" secondItem="HhV-bd-I5D" secondAttribute="bottom" constant="8" id="ZlK-YA-HsT"/>
+                <constraint firstAttribute="trailing" secondItem="pqg-zh-LVc" secondAttribute="trailing" id="YAi-W2-HTR"/>
                 <constraint firstAttribute="trailing" secondItem="HhV-bd-I5D" secondAttribute="trailing" id="bCr-Hn-62x"/>
+                <constraint firstItem="pqg-zh-LVc" firstAttribute="top" secondItem="HhV-bd-I5D" secondAttribute="bottom" id="bcL-13-Ovq"/>
                 <constraint firstItem="HhV-bd-I5D" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cMI-SK-NSP"/>
-                <constraint firstItem="9dr-DO-mmw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gSy-sT-jxj"/>
+                <constraint firstItem="pqg-zh-LVc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zHm-Rj-6yk"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
     <resources>
-        <image name="panda" width="60" height="60"/>
-        <image name="salute" width="66" height="66"/>
+        <image name="sticker-also" width="200" height="150"/>
+        <image name="sticker-bear" width="200" height="175"/>
+        <image name="sticker-burger" width="200" height="175"/>
+        <image name="sticker-flag" width="200" height="175"/>
+        <image name="sticker-heart" width="200" height="200"/>
+        <image name="sticker-illinois" width="265" height="384"/>
     </resources>
 </document>
