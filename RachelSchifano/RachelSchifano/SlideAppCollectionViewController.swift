@@ -90,7 +90,7 @@ class SlideAppCollectionViewController: UICollectionViewController {
                 "title": "NEWSFEED",
                 "description": "Children International news feed. Stay updated with your sponsored child. Parse."
             ], [
-                "image": "",
+                "image": "29-other",
                 "title": "OTHER APPS",
                 "description": "Numerous other iOS sample and work apps. Notably: face/rectangle detection, cameras, CoreImage/OpenGL."
             ]

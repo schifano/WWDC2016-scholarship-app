@@ -332,7 +332,7 @@ So here I am a year later, fighting a sniffly nose and pulling an all-nighter ju
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="666"/>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yHU-2r-I0n" userLabel="Description View">
-                                            <rect key="frame" x="37" y="258" width="300" height="177"/>
+                                            <rect key="frame" x="37" y="436" width="300" height="177"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APP TITLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVB-V1-IkC" userLabel="Slide Title">
                                                     <rect key="frame" x="26" y="15" width="248" height="42"/>
@@ -370,7 +370,7 @@ So here I am a year later, fighting a sniffly nose and pulling an all-nighter ju
                                     <constraint firstItem="umZ-TM-BUb" firstAttribute="top" secondItem="mOu-pv-tjd" secondAttribute="topMargin" constant="-8" id="7OL-eZ-XPS"/>
                                     <constraint firstItem="yHU-2r-I0n" firstAttribute="leading" secondItem="mOu-pv-tjd" secondAttribute="leadingMargin" constant="29" id="WFE-ec-C3c"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="umZ-TM-BUb" secondAttribute="bottom" constant="-8" id="Zm9-Jf-bFe"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="yHU-2r-I0n" secondAttribute="bottom" constant="223" id="mCi-11-CcT"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="yHU-2r-I0n" secondAttribute="bottom" constant="45" id="mCi-11-CcT"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="umZ-TM-BUb" secondAttribute="trailing" constant="-8" id="nTp-3R-lhi"/>
                                     <constraint firstItem="umZ-TM-BUb" firstAttribute="leading" secondItem="mOu-pv-tjd" secondAttribute="leadingMargin" constant="-8" id="pWY-18-a2s"/>
                                 </constraints>
