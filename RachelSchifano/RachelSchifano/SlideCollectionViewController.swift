@@ -21,24 +21,24 @@ class SlideCollectionViewController: UICollectionViewController {
         
         // Implement swipe gesture
         let downSwipe = UISwipeGestureRecognizer(target: self, action: #selector(SlideCollectionViewController.handleDownSwipe(_:)))
-        downSwipe.direction = .Down
+        downSwipe.direction = .down
         view.addGestureRecognizer(downSwipe)
         
         // FIXME: Add minimumLineSpacing gap for design
         // Set dimension of collection view cells to be size of screen
-        flowLayout.itemSize = CGSizeMake(self.view.frame.width, self.view.frame.height)
+        flowLayout.itemSize = CGSize(width: self.view.frame.width, height: self.view.frame.height)
         // FIXME: Temporary fix for the cell gap issue
         flowLayout.minimumLineSpacing = 0
     }
     
     // TODO: Implement unwind segue
-    func handleDownSwipe(sender: UISwipeGestureRecognizer) {
+    func handleDownSwipe(_ sender: UISwipeGestureRecognizer) {
         print("Swiped down") // TEST
-        performSegueWithIdentifier("unwindToHome", sender: nil)
+        performSegue(withIdentifier: "unwindToHome", sender: nil)
     }
     
     // TODO: Hide the status bar
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
     
@@ -50,7 +50,7 @@ class SlideCollectionViewController: UICollectionViewController {
          - parameter section: An index number identifying a section in collectionView.
          - returns: memes.count The number of rows (memes) in section
      */
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         var numberOfItems: Int!
         switch buttonSelected {
             case "ABOUT":
@@ -65,8 +65,8 @@ class SlideCollectionViewController: UICollectionViewController {
         return numberOfItems
     }
     
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("SlideCollectionViewCell", forIndexPath: indexPath) as! SlideCollectionViewCell
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SlideCollectionViewCell", for: indexPath) as! SlideCollectionViewCell
         
         // Load data corresponding to button tapped
         var slide = [String: AnyObject]()
@@ -119,13 +119,13 @@ class SlideCollectionViewController: UICollectionViewController {
     
     
     // Used when the table dequeues a cell, or when it scrolls
-    func parallaxOffsetFor(newOffsetY: CGFloat, cell: UICollectionViewCell) -> CGFloat {
+    func parallaxOffsetFor(_ newOffsetY: CGFloat, cell: UICollectionViewCell) -> CGFloat {
         return ((newOffsetY - cell.frame.origin.y) / parallaxImageHeight) * parallaxOffsetSpeed
     }
     
-    override func scrollViewDidScroll(scrollView: UIScrollView) {
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetY = slideCollectionView.contentOffset.y
-        for cell in slideCollectionView.visibleCells() as! [SlideCollectionViewCell] {
+        for cell in slideCollectionView.visibleCells as! [SlideCollectionViewCell] {
 //            cell.parallaxTopConstraint.constant = parallaxOffsetFor(offsetY, cell: cell)
         }
     }
@@ -134,14 +134,14 @@ class SlideCollectionViewController: UICollectionViewController {
     func hardCodedAboutData() ->[[String: AnyObject]] {
         return [
             [
-                "image": "1-italipino",
-                "hashtag": "#Italipino",
-                "title": "SYNTHESIZER",
-                "description": "Genetically and by craft."
+                "image": "1-italipino" as AnyObject,
+                "hashtag": "#Italipino" as AnyObject,
+                "title": "SYNTHESIZER" as AnyObject,
+                "description": "Genetically and by craft." as AnyObject
             ], [
-                "image": "2-throwback",
-                "hashtag": "#MarioEarlyYears",
-                "title": "THROWBACK",
+                "image": "2-throwback" as AnyObject,
+                "hashtag": "#MarioEarlyYears" as AnyObject,
+                "title": "THROWBACK" as AnyObject,
                 "description": "The real start to my CS career."
             ], [
                 "image": "3-goodneighbear",
@@ -175,14 +175,14 @@ class SlideCollectionViewController: UICollectionViewController {
     func hardCodedAchievementsData() ->[[String: AnyObject]] {
         return [
             [
-                "image": "9-niaf",
-                "hashtag": "#NIAF",
-                "title": "HERITAGE",
-                "description": "National Italian American Foundation scholarship winner. 10-day trip. 500 applicants."
+                "image": "9-niaf" as AnyObject,
+                "hashtag": "#NIAF" as AnyObject,
+                "title": "HERITAGE" as AnyObject,
+                "description": "National Italian American Foundation scholarship winner. 10-day trip. 500 applicants." as AnyObject
             ], [
-                "image": "10-redbirdhacks",
-                "hashtag": "#RedbirdHacks",
-                "title": "DIRECTOR",
+                "image": "10-redbirdhacks" as AnyObject,
+                "hashtag": "#RedbirdHacks" as AnyObject,
+                "title": "DIRECTOR" as AnyObject,
                 "description": "Founded. Raised $16,000. First hackathon at Illinois State."
             ], [
                 "image": "11-square",
@@ -221,14 +221,14 @@ class SlideCollectionViewController: UICollectionViewController {
     func hardCodedAmbitionsData() ->[[String: AnyObject]] {
         return [
             [
-                "image": "17-wheel",
-                "hashtag": "#Engineering",
-                "title": "MY PASSION",
-                "description": "Any intersection of engineering. I have to dissect it and learn it. Even Disneyland."
+                "image": "17-wheel" as AnyObject,
+                "hashtag": "#Engineering" as AnyObject,
+                "title": "MY PASSION" as AnyObject,
+                "description": "Any intersection of engineering. I have to dissect it and learn it. Even Disneyland." as AnyObject
             ], [
-                "image": "18-bridge",
-                "hashtag": "#BayArea",
-                "title": "MY FUTURE",
+                "image": "18-bridge" as AnyObject,
+                "hashtag": "#BayArea" as AnyObject,
+                "title": "MY FUTURE" as AnyObject,
                 "description": "Building apps to gain XP and level up. A challenging career change motivates me."
             ], [
                 "image": "19-automechanics",

@@ -22,53 +22,53 @@ class KeyboardViewController: UIInputViewController {
         super.viewDidLoad()
     
         let nib = UINib(nibName: "KeyboardView", bundle: nil)
-        let objects = nib.instantiateWithOwner(self, options: nil)
+        let objects = nib.instantiate(withOwner: self, options: nil)
         view = objects[0] as! UIView;
         
         // Perform custom UI setup here
         
-        self.nextKeyboardButton = UIButton(type: .System)
+        self.nextKeyboardButton = UIButton(type: .system)
     
-        self.nextKeyboardButton.setTitle(NSLocalizedString("KB", comment: "Title for 'Next Keyboard' button"), forState: .Normal)
+        self.nextKeyboardButton.setTitle(NSLocalizedString("KB", comment: "Title for 'Next Keyboard' button"), for: UIControlState())
         self.nextKeyboardButton.sizeToFit()
         self.nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = false
     
-        self.nextKeyboardButton.addTarget(self, action: #selector(UIInputViewController.advanceToNextInputMode), forControlEvents: .TouchUpInside)
+        self.nextKeyboardButton.addTarget(self, action: #selector(UIInputViewController.advanceToNextInputMode), for: .touchUpInside)
         
         self.view.addSubview(self.nextKeyboardButton)
     
-        self.nextKeyboardButton.leftAnchor.constraintEqualToAnchor(self.view.leftAnchor).active = true
-        self.nextKeyboardButton.bottomAnchor.constraintEqualToAnchor(self.view.bottomAnchor).active = true
+        self.nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+        self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
     }
     
     
-    @IBAction func bearStickerPressed(sender: UIButton) {
+    @IBAction func bearStickerPressed(_ sender: UIButton) {
         let image = UIImage(named: "sticker-bear")
-        UIPasteboard.generalPasteboard().image = image
+        UIPasteboard.general.image = image
     }
     
-    @IBAction func burgerStickerPressed(sender: UIButton) {
+    @IBAction func burgerStickerPressed(_ sender: UIButton) {
         let image = UIImage(named: "sticker-burger")
-        UIPasteboard.generalPasteboard().image = image
+        UIPasteboard.general.image = image
     }
     
-    @IBAction func heartStickerPressed(sender: UIButton) {
+    @IBAction func heartStickerPressed(_ sender: UIButton) {
         let image = UIImage(named: "sticker-heart")
-        UIPasteboard.generalPasteboard().image = image
+        UIPasteboard.general.image = image
     }
     
-    @IBAction func alsoStickerPressed(sender: UIButton) {
+    @IBAction func alsoStickerPressed(_ sender: UIButton) {
         let image = UIImage(named: "sticker-also")
-        UIPasteboard.generalPasteboard().image = image
+        UIPasteboard.general.image = image
     }
     
-    @IBAction func illinoisStickerPressed(sender: UIButton) {
+    @IBAction func illinoisStickerPressed(_ sender: UIButton) {
         let image = UIImage(named: "sticker-illinois")
-        UIPasteboard.generalPasteboard().image = image
+        UIPasteboard.general.image = image
     }
     
-    @IBAction func flagStickerPressed(sender: UIButton) {
+    @IBAction func flagStickerPressed(_ sender: UIButton) {
         let image = UIImage(named: "sticker-flag")
-        UIPasteboard.generalPasteboard().image = image
+        UIPasteboard.general.image = image
     }
 }

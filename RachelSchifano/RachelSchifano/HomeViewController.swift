@@ -19,7 +19,7 @@ class HomeViewController: UIViewController {
     
     // TODO: Unhide status bar?
     // FIXME: Hiding status bar causes a glitch adjustment bc of constraints
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return false
     }
     
@@ -28,33 +28,33 @@ class HomeViewController: UIViewController {
     // Call in corresponding data
     
     // MARK: Actions for menu buttons
-    @IBAction func aboutButtonTapped(sender: AnyObject) {
+    @IBAction func aboutButtonTapped(_ sender: AnyObject) {
         buttonTapped = sender.currentTitle
         print(buttonTapped) // TEST prints out actual title successfully "ABOUT"
     }
-    @IBAction func achievementsButtonTapped(sender: AnyObject) {
+    @IBAction func achievementsButtonTapped(_ sender: AnyObject) {
         buttonTapped = sender.currentTitle
         print(buttonTapped) // TEST
     }
     
-    @IBAction func ambitionsButtonTapped(sender: AnyObject) {
+    @IBAction func ambitionsButtonTapped(_ sender: AnyObject) {
         buttonTapped = sender.currentTitle
         print(buttonTapped) // TEST
     }
     
-    @IBAction func appsButtonTapped(sender: AnyObject) {
+    @IBAction func appsButtonTapped(_ sender: AnyObject) {
         buttonTapped = sender.currentTitle
         print(buttonTapped) // TEST
     }
     
-    @IBAction func unwindToHome(segue: UIStoryboardSegue) {
+    @IBAction func unwindToHome(_ segue: UIStoryboardSegue) {
         
     }
     
     // Perform segue to SlideCollectionViewController
     // Pass selected button text
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let slideCollectionViewController = segue.destinationViewController as? SlideCollectionViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let slideCollectionViewController = segue.destination as? SlideCollectionViewController {
             slideCollectionViewController.buttonSelected = buttonTapped
         }
     }

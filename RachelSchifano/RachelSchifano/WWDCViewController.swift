@@ -12,11 +12,11 @@ import UIKit
 class WWDCViewController: UIViewController {
     
     // TODO: Basketball animation
-    @IBAction func swooshButtonTapped(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func swooshButtonTapped(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func gotItButtonTapped(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func gotItButtonTapped(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
 }

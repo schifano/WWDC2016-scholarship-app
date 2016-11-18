@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		291F5EB61D29AE8100A485FF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291F5EB41D29AE8100A485FF /* Interface.storyboard */; };
+		291F5EB81D29AE8100A485FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291F5EB71D29AE8100A485FF /* Assets.xcassets */; };
+		291F5EBF1D29AE8100A485FF /* RachelWatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 291F5EBE1D29AE8100A485FF /* RachelWatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		291F5EC61D29AE8100A485FF /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291F5EC51D29AE8100A485FF /* InterfaceController.swift */; };
+		291F5EC81D29AE8100A485FF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291F5EC71D29AE8100A485FF /* ExtensionDelegate.swift */; };
+		291F5ECA1D29AE8100A485FF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291F5EC91D29AE8100A485FF /* NotificationController.swift */; };
+		291F5ECC1D29AE8100A485FF /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291F5ECB1D29AE8100A485FF /* GlanceController.swift */; };
+		291F5ECE1D29AE8100A485FF /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291F5ECD1D29AE8100A485FF /* ComplicationController.swift */; };
+		291F5ED01D29AE8100A485FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291F5ECF1D29AE8100A485FF /* Assets.xcassets */; };
+		291F5ED41D29AE8100A485FF /* RachelWatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 291F5EB21D29AE8100A485FF /* RachelWatchApp.app */; };
 		295258551CD5DA8900B6CCF4 /* WWDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295258541CD5DA8900B6CCF4 /* WWDCViewController.swift */; };
 		295258571CD5EAFE00B6CCF4 /* SlideAppCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295258561CD5EAFE00B6CCF4 /* SlideAppCollectionViewCell.swift */; };
 		295258591CD5EB5300B6CCF4 /* SlideAppCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295258581CD5EB5300B6CCF4 /* SlideAppCollectionViewController.swift */; };
@@ -28,6 +38,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		291F5EC01D29AE8100A485FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2956D3711CCB309F00359377 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 291F5EBD1D29AE8100A485FF;
+			remoteInfo = "RachelWatchApp Extension";
+		};
+		291F5ED21D29AE8100A485FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2956D3711CCB309F00359377 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 291F5EB11D29AE8100A485FF;
+			remoteInfo = RachelWatchApp;
+		};
 		2956D38E1CCB309F00359377 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2956D3711CCB309F00359377 /* Project object */;
@@ -52,6 +76,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		291F5E831D29AD1D00A485FF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				291F5ED41D29AE8100A485FF /* RachelWatchApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		291F5ED81D29AE8200A485FF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				291F5EBF1D29AE8100A485FF /* RachelWatchApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		297B99821CD6834E00BB30CE /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,6 +112,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		291F5EB21D29AE8100A485FF /* RachelWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RachelWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		291F5EB51D29AE8100A485FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		291F5EB71D29AE8100A485FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		291F5EB91D29AE8100A485FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		291F5EBE1D29AE8100A485FF /* RachelWatchApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RachelWatchApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		291F5EC41D29AE8100A485FF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		291F5EC51D29AE8100A485FF /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		291F5EC71D29AE8100A485FF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		291F5EC91D29AE8100A485FF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		291F5ECB1D29AE8100A485FF /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		291F5ECD1D29AE8100A485FF /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		291F5ECF1D29AE8100A485FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		291F5ED11D29AE8100A485FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		295258541CD5DA8900B6CCF4 /* WWDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWDCViewController.swift; sourceTree = "<group>"; };
 		295258561CD5EAFE00B6CCF4 /* SlideAppCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideAppCollectionViewCell.swift; sourceTree = "<group>"; };
 		295258581CD5EB5300B6CCF4 /* SlideAppCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideAppCollectionViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +152,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		291F5EBB1D29AE8100A485FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2956D3761CCB309F00359377 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,6 +190,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		291F5EB31D29AE8100A485FF /* RachelWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				291F5EB41D29AE8100A485FF /* Interface.storyboard */,
+				291F5EB71D29AE8100A485FF /* Assets.xcassets */,
+				291F5EB91D29AE8100A485FF /* Info.plist */,
+			);
+			path = RachelWatchApp;
+			sourceTree = "<group>";
+		};
+		291F5EC21D29AE8100A485FF /* RachelWatchApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				291F5EC51D29AE8100A485FF /* InterfaceController.swift */,
+				291F5EC71D29AE8100A485FF /* ExtensionDelegate.swift */,
+				291F5EC91D29AE8100A485FF /* NotificationController.swift */,
+				291F5ECB1D29AE8100A485FF /* GlanceController.swift */,
+				291F5ECD1D29AE8100A485FF /* ComplicationController.swift */,
+				291F5ECF1D29AE8100A485FF /* Assets.xcassets */,
+				291F5ED11D29AE8100A485FF /* Info.plist */,
+				291F5EC31D29AE8100A485FF /* Supporting Files */,
+			);
+			path = "RachelWatchApp Extension";
+			sourceTree = "<group>";
+		};
+		291F5EC31D29AE8100A485FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				291F5EC41D29AE8100A485FF /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		2954C4FA1CD2EA4A009E89D9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +259,8 @@
 				2956D3901CCB30A000359377 /* RachelSchifanoTests */,
 				2956D39B1CCB30A000359377 /* RachelSchifanoUITests */,
 				297B99781CD6834E00BB30CE /* StickerKeyboard */,
+				291F5EB31D29AE8100A485FF /* RachelWatchApp */,
+				291F5EC21D29AE8100A485FF /* RachelWatchApp Extension */,
 				2956D37A1CCB309F00359377 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -171,6 +272,8 @@
 				2956D38D1CCB309F00359377 /* RachelSchifanoTests.xctest */,
 				2956D3981CCB30A000359377 /* RachelSchifanoUITests.xctest */,
 				297B99771CD6834E00BB30CE /* StickerKeyboard.appex */,
+				291F5EB21D29AE8100A485FF /* RachelWatchApp.app */,
+				291F5EBE1D29AE8100A485FF /* RachelWatchApp Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -221,6 +324,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		291F5EB11D29AE8100A485FF /* RachelWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 291F5ED91D29AE8200A485FF /* Build configuration list for PBXNativeTarget "RachelWatchApp" */;
+			buildPhases = (
+				291F5EB01D29AE8100A485FF /* Resources */,
+				291F5ED81D29AE8200A485FF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				291F5EC11D29AE8100A485FF /* PBXTargetDependency */,
+			);
+			name = RachelWatchApp;
+			productName = RachelWatchApp;
+			productReference = 291F5EB21D29AE8100A485FF /* RachelWatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		291F5EBD1D29AE8100A485FF /* RachelWatchApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 291F5ED51D29AE8200A485FF /* Build configuration list for PBXNativeTarget "RachelWatchApp Extension" */;
+			buildPhases = (
+				291F5EBA1D29AE8100A485FF /* Sources */,
+				291F5EBB1D29AE8100A485FF /* Frameworks */,
+				291F5EBC1D29AE8100A485FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RachelWatchApp Extension";
+			productName = "RachelWatchApp Extension";
+			productReference = 291F5EBE1D29AE8100A485FF /* RachelWatchApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		2956D3781CCB309F00359377 /* RachelSchifano */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2956D3A11CCB30A000359377 /* Build configuration list for PBXNativeTarget "RachelSchifano" */;
@@ -229,11 +366,13 @@
 				2956D3761CCB309F00359377 /* Frameworks */,
 				2956D3771CCB309F00359377 /* Resources */,
 				297B99821CD6834E00BB30CE /* Embed App Extensions */,
+				291F5E831D29AD1D00A485FF /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				297B997D1CD6834E00BB30CE /* PBXTargetDependency */,
+				291F5ED31D29AE8100A485FF /* PBXTargetDependency */,
 			);
 			name = RachelSchifano;
 			productName = RachelSchifano;
@@ -303,21 +442,34 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = schifano;
 				TargetAttributes = {
+					291F5EB11D29AE8100A485FF = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = MWRAZYEL66;
+						LastSwiftMigration = 0810;
+					};
+					291F5EBD1D29AE8100A485FF = {
+						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0810;
+					};
 					2956D3781CCB309F00359377 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = MWRAZYEL66;
+						LastSwiftMigration = 0810;
 					};
 					2956D38C1CCB309F00359377 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0810;
 						TestTargetID = 2956D3781CCB309F00359377;
 					};
 					2956D3971CCB30A000359377 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0810;
 						TestTargetID = 2956D3781CCB309F00359377;
 					};
 					297B99761CD6834E00BB30CE = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = MWRAZYEL66;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -338,11 +490,30 @@
 				2956D38C1CCB309F00359377 /* RachelSchifanoTests */,
 				2956D3971CCB30A000359377 /* RachelSchifanoUITests */,
 				297B99761CD6834E00BB30CE /* StickerKeyboard */,
+				291F5EB11D29AE8100A485FF /* RachelWatchApp */,
+				291F5EBD1D29AE8100A485FF /* RachelWatchApp Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		291F5EB01D29AE8100A485FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				291F5EB81D29AE8100A485FF /* Assets.xcassets in Resources */,
+				291F5EB61D29AE8100A485FF /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		291F5EBC1D29AE8100A485FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				291F5ED01D29AE8100A485FF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2956D3771CCB309F00359377 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,6 +550,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		291F5EBA1D29AE8100A485FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				291F5ECA1D29AE8100A485FF /* NotificationController.swift in Sources */,
+				291F5EC81D29AE8100A485FF /* ExtensionDelegate.swift in Sources */,
+				291F5ECE1D29AE8100A485FF /* ComplicationController.swift in Sources */,
+				291F5EC61D29AE8100A485FF /* InterfaceController.swift in Sources */,
+				291F5ECC1D29AE8100A485FF /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2956D3751CCB309F00359377 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -422,6 +605,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		291F5EC11D29AE8100A485FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 291F5EBD1D29AE8100A485FF /* RachelWatchApp Extension */;
+			targetProxy = 291F5EC01D29AE8100A485FF /* PBXContainerItemProxy */;
+		};
+		291F5ED31D29AE8100A485FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 291F5EB11D29AE8100A485FF /* RachelWatchApp */;
+			targetProxy = 291F5ED21D29AE8100A485FF /* PBXContainerItemProxy */;
+		};
 		2956D38F1CCB309F00359377 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2956D3781CCB309F00359377 /* RachelSchifano */;
@@ -440,6 +633,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		291F5EB41D29AE8100A485FF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				291F5EB51D29AE8100A485FF /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		2956D3851CCB309F00359377 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -451,6 +652,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		291F5ED61D29AE8200A485FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "RachelWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.schifano.RachelSchifano.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		291F5ED71D29AE8200A485FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "RachelWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.schifano.RachelSchifano.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		291F5EDA1D29AE8200A485FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = RachelWatchApp_Extension;
+				INFOPLIST_FILE = RachelWatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.schifano.RachelSchifano.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		291F5EDB1D29AE8200A485FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = RachelWatchApp_Extension;
+				INFOPLIST_FILE = RachelWatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.schifano.RachelSchifano.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 		2956D39F1CCB30A000359377 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -544,6 +819,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.schifano.RachelSchifano;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -559,6 +835,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.schifano.RachelSchifano;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -570,6 +847,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schifano.RachelSchifanoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RachelSchifano.app/RachelSchifano";
 			};
 			name = Debug;
@@ -582,6 +860,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schifano.RachelSchifanoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RachelSchifano.app/RachelSchifano";
 			};
 			name = Release;
@@ -593,6 +872,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schifano.RachelSchifanoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = RachelSchifano;
 				USES_XCTRUNNER = YES;
 			};
@@ -605,6 +885,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schifano.RachelSchifanoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = RachelSchifano;
 				USES_XCTRUNNER = YES;
 			};
@@ -622,6 +903,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.schifano.RachelSchifano.StickerKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -637,12 +919,31 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.schifano.RachelSchifano.StickerKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		291F5ED51D29AE8200A485FF /* Build configuration list for PBXNativeTarget "RachelWatchApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				291F5ED61D29AE8200A485FF /* Debug */,
+				291F5ED71D29AE8200A485FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		291F5ED91D29AE8200A485FF /* Build configuration list for PBXNativeTarget "RachelWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				291F5EDA1D29AE8200A485FF /* Debug */,
+				291F5EDB1D29AE8200A485FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2956D3741CCB309F00359377 /* Build configuration list for PBXProject "RachelSchifano" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -686,6 +987,7 @@
 				297B99801CD6834E00BB30CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -23,7 +23,7 @@ class SlideCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         clipsToBounds = true
-        slideImageView.contentMode = .ScaleAspectFill
+        slideImageView.contentMode = .scaleAspectFill
         slideImageView.clipsToBounds = false
     }
 }

@@ -18,24 +18,24 @@ class SlideAppCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         
         // Set dimension of collection view cells to be size of screen
-        flowLayout.itemSize = CGSizeMake(self.view.frame.width, self.view.frame.height)
+        flowLayout.itemSize = CGSize(width: self.view.frame.width, height: self.view.frame.height)
         // FIXME: Temporary fix for the cell gap issue
         flowLayout.minimumLineSpacing = 0
         
         // Implement swipe gesture
         let downSwipe = UISwipeGestureRecognizer(target: self, action: #selector(SlideAppCollectionViewController.handleDownSwipe(_:)))
-        downSwipe.direction = .Down
+        downSwipe.direction = .down
         view.addGestureRecognizer(downSwipe)
     }
     
     // TODO: Implement unwind segue
-    func handleDownSwipe(sender: UISwipeGestureRecognizer) {
+    func handleDownSwipe(_ sender: UISwipeGestureRecognizer) {
         print("Swiped down") // TEST
-        performSegueWithIdentifier("unwindToHome", sender: nil)
+        performSegue(withIdentifier: "unwindToHome", sender: nil)
     }
     
     // TODO: Hide the status bar
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
     
@@ -47,12 +47,12 @@ class SlideAppCollectionViewController: UICollectionViewController {
          - parameter section: An index number identifying a section in collectionView.
          - returns: memes.count The number of rows (memes) in section
      */
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return hardCodedAppsData().count
     }
     
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("SlideAppCollectionViewCell", forIndexPath: indexPath) as! SlideAppCollectionViewCell
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SlideAppCollectionViewCell", for: indexPath) as! SlideAppCollectionViewCell
         
         // Load data corresponding to button tapped
         var app = [String: AnyObject]()
@@ -74,15 +74,15 @@ class SlideAppCollectionViewController: UICollectionViewController {
     func hardCodedAppsData() ->[[String: AnyObject]] {
         return [
             [
-                "image": "25-meme",
-                "title": "MEME ME",
-                "description": "Table and Collection View. Take or load a photo. Create and edit memes. Save or send memes to friends."
+                "image": "25-meme" as AnyObject,
+                "title": "MEME ME" as AnyObject,
+                "description": "Table and Collection View. Take or load a photo. Create and edit memes. Save or send memes to friends." as AnyObject
             ], [
-                "image": "26-pitch",
-                "title": "PITCH PERFECT",
-                "description": "Record audio. Effects: Chipmunk, Vader, Slow, Fast, Reverb, Echo. Accessibility enabled."
+                "image": "26-pitch" as AnyObject,
+                "title": "PITCH PERFECT" as AnyObject,
+                "description": "Record audio. Effects: Chipmunk, Vader, Slow, Fast, Reverb, Echo. Accessibility enabled." as AnyObject
             ], [
-                "image": "27-maps",
+                "image": "27-maps" as AnyObject,
                 "title": "ON THE MAP",
                 "description": "Load map of Udacity students. Add your location and website. Parse."
             ], [

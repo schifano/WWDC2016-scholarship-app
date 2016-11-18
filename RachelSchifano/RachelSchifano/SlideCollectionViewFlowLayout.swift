@@ -11,17 +11,17 @@ import UIKit
 
 class SlideCollectionViewFlowLayout: UICollectionViewFlowLayout {
 
-    override func targetContentOffsetForProposedContentOffset(proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
-        var offsetAdjustment = CGFloat.max
+    override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
+        var offsetAdjustment = CGFloat.greatestFiniteMagnitude
         let horizontalOffset = proposedContentOffset.x
-        let targetRect = CGRectMake(proposedContentOffset.x, 0, self.collectionView!.bounds.size.width, self.collectionView!.bounds.size.height)
+        let targetRect = CGRect(x: proposedContentOffset.x, y: 0, width: self.collectionView!.bounds.size.width, height: self.collectionView!.bounds.size.height)
         
-        for layoutAttributes in super.layoutAttributesForElementsInRect(targetRect)! {
+        for layoutAttributes in super.layoutAttributesForElements(in: targetRect)! {
             let itemOffset = layoutAttributes.frame.origin.x
             if (abs(itemOffset - horizontalOffset) < abs(offsetAdjustment)) {
                 offsetAdjustment = itemOffset - horizontalOffset
             }
         }
-        return CGPointMake(proposedContentOffset.x + offsetAdjustment, proposedContentOffset.y)
+        return CGPoint(x: proposedContentOffset.x + offsetAdjustment, y: proposedContentOffset.y)
     }
 }
